@@ -1,11 +1,40 @@
 body {
     background-color: floralwhite;
+    
     }
-.myname {
+.title {
     color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: auto;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    }
+
+a:hover {
+    color: yellow;
 
 }
+
+/* Section Styles */
+
+.main-nav {
+    width: 100%;
+    background: black;
+   }
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+
 ul {
     position: relative;
     text-align: center;
@@ -20,6 +49,7 @@ ul {
 li {
     display: inline;
     text-align: center;
+    padding: 5px 10px 10px 10px;
         }
 
 li a {
@@ -43,7 +73,7 @@ p {
 
 form {
     text-decoration-color: gray;
-    color: #888;
+    color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
