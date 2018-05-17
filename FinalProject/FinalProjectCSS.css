@@ -1,7 +1,11 @@
 body {
     background-color: floralwhite;
     }
+.myname {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+}
 ul {
     position: relative;
     text-align: center;
@@ -20,24 +24,27 @@ li {
 
 li a {
    color: gainsboro;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }      
 
 
 h1 {
     color: gray;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 p {
     color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
 form {
     text-decoration-color: gray;
     color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
