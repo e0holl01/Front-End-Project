@@ -1,11 +1,21 @@
 body {
     background-color: floralwhite;
+    width: auto;
+    margin: 0 auto;
+    
+
+div {
+    width: 70%;
+    margin: 0 auto;
+
+}    
     
     }
 .title {
     color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-right: auto;
+    
 }
 
 /* Link Styles */
@@ -15,6 +25,11 @@ a {
 
 a:hover {
     color: yellow;
+
+}
+
+.linkedin_square32
+{ background:url(linkedin-square-32.png) no-repeat; }
 
 }
 
@@ -58,28 +73,53 @@ li a {
 
 }      
 
+main {
+max-width: width auto;
+
+}
+
+/* Home Page */
 
 h1 {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 
 }
 
 p {
     color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+   
 
 }
+
+/* Schedule a Consultation page */
 
 form {
     text-decoration-color: gray;
     color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
+#companyname, #firstname, #lastname, #email, #phonenumber {
+    text-transform: uppercase;
 
+}
+/* About Page */
+
+.LI-profile-badge {
+    padding: 10px;
+    border: 10%;
+
+}
 
     
+  
 
 }
+    
