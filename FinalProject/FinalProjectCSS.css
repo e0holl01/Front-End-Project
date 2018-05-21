@@ -85,7 +85,7 @@ main {
 h1 {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding-top: 10px;
 
 }
 
@@ -108,14 +108,39 @@ form {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 45%;
     margin: 0 auto;
-    
-    
+    max-width: 500px;    
 }
 
 #companyname, #firstname, #lastname, #email, #phonenumber {
     text-transform: uppercase;
-
 }
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  font-size: 1em;
+  color: black;
+  font-weight: 300; 
+  width: 100%;
+  border: none;
+  height: auto;
+  padding: 15px;
+  outline: 0;
+  margin-bottom: 1.2em;
+  border-radius: .3em;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  background-color: whitesmoke;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+   
+}
+
 /*=========== About Page */
 
 .LI-profile-badge {
@@ -126,11 +151,24 @@ form {
    
 }
 
+/*=========== Attribute Selectors */
+.form-consult {
+    padding: 20px 25px;	
+}
+
+#container-consult {
+	max-width: 500px;
+	margin: auto;
+}
+
+
+
+
 /*=========== Media Queries */  
-  @media (min-width: 769px {
-    div {    
-        width: 70%;
-        margin:  0 auto;
+  @media (max-width: 768px) {
+	#container {
+		width: 92%;
+	}
 
   }
 
