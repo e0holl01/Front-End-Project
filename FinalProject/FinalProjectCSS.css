@@ -1,52 +1,48 @@
-/* ===========Element Styles=========== */
+/* ===========Background Color=========== */
 
 
 body {
     background-color: floralwhite;
-    
-    
-
-div {
-
-
-}    
-    
     }
-/* ===========QA by Erica =========== */
+
+/* ===========Title - QA by Erica =========== */
 .title {
-    color: gainsboro; 
+    color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-right: auto;
-    
+    float: left;
+    bottom: 20px;
+    position: relative;
+    z-index: 999;
+    left: 6px;
 }
 
-/*=========== Link Styles=========== */
+
+/*===========Nav Link Styles=========== */
 a {
     text-decoration: none;
     }
 
 a:hover {
     color: yellow;
-
 }
 
 
 
-/*=========== Section Styles=========== */
+/*=========== Nav Section Styles=========== */
 
 .main-nav {
     width: 100%;
     background: black;
+        
    }
 
 
 .nav {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0 auto;
+    display: inline-block; 
     padding: 0;
-  }
+    margin-left: 510px;
+    position: relative;
+      }
 
 
 ul {
@@ -72,19 +68,20 @@ li a {
 
 }      
 
-main {
-    margin: 0 auto;
-    width: 75%
-
-}
 
 /*=========== Home Page=========== */
+
+.main-testing {
+    margin: 0 auto;
+    width: 75%
+}
+
 
 h1 {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
-
+    /*===========Also on Schedule Page=========== */
 }
 
 p {
@@ -94,9 +91,7 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-   
-
-}
+   }
 
 /*=========== Schedule a Consultation page=========== */
 
