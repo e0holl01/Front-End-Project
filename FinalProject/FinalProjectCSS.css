@@ -1,7 +1,7 @@
 /* ===========Background Color=========== */
 
 
-body {
+:root {
     background-color: floralwhite;
     }
 
@@ -10,12 +10,24 @@ body {
     color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     float: left;
-    bottom: 22px;
+    bottom: 19px;
     position: relative;
     z-index: 999;
     left: 6px;
 }
 
+
+.title::before,
+.title::after {
+    content: "";                /* ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin: 0 20px;
+
+}
 
 /*===========Nav Link Styles=========== */
 a {
@@ -30,11 +42,11 @@ a:hover {
 
 /*=========== Nav Section Styles=========== */
 
-.main-nav {
+div.main-nav {
     width: 100%;
     background: black;
-        
-   }
+    
+        }
 
 
 .nav {
@@ -43,7 +55,8 @@ a:hover {
     margin-left: 510px;
     margin-top: 5px;
     position: relative;
-      }
+    
+     }
 
 
 ul {
@@ -54,7 +67,7 @@ ul {
     margin: 0;
     padding: 0;
     background-color: black;
-    overflow: hidden;
+    
      }
 
 li {
@@ -74,7 +87,7 @@ li a {
 
 .main-testing {
     margin: 0 auto;
-    width: 75%
+    width: 100%
 }
 
 
@@ -82,6 +95,7 @@ h1 {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
+    
     /*===========Also on Schedule Page=========== */
 }
 
@@ -138,7 +152,7 @@ label {
 
 textarea {
     background-color: whitesmoke;
-    width: 100%;
+    width: 480px;
     height: 150px;
 }
 
@@ -150,9 +164,9 @@ textarea {
   padding-left: 20px;
   padding-right: 20px;
   text-transform: uppercase;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow:inset 0 1px 0 rgba(0,0,0,0.03) ;
 }
-/*=========== About Page */
+/*===========About Page=========== */
 
 .LI-profile-badge {
     padding-top: 10px;
@@ -162,7 +176,7 @@ textarea {
    
 }
 
-/*=========== Attribute Selectors */
+/*=========== Attribute Selectors=========== */
 .form-consult {
     padding: 20px 25px;	
 }
@@ -175,8 +189,8 @@ textarea {
 
 
 
-/*=========== Media Queries */  
-  @media (max-width: 768px) {
+/*=========== Media Queries=========== */  
+  @media screen and (max-width: 1500px) {
     #container-consult, textarea {
 		width: 90%;
     }
@@ -189,9 +203,20 @@ textarea {
         width: 90%;
         margin-right: 20px;
           }
-
-
-  }
-
-}
     
+
+
+    }     
+
+    @media only screen and (max-width: 1600px) {
+       .title {
+          display: none;
+        }
+
+      .nav {
+            float: right;
+            display: block;
+            position: relative;
+
+        }
+      }   
