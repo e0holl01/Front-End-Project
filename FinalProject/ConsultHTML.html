@@ -11,6 +11,18 @@
 
 <body>
 
+        <script type = "text/javascript">
+            function DisplayMultiLineAlert() {
+                var newLine = "\r\n"
+                var message = "I have not learned how to make a form submit in CodeLouisville yet."
+                message += newLine;
+                message += "If you really need a consult, please e-mail me at QAbyErica@yahoo.com";
+                message += newLine;
+                message += "P.S. That is not a real e-mail address.";
+                alert(message);
+            }
+        </script>
+
     <div class="main-nav">
             <ul class="nav">
                 <li><a href="HomeHTML.html">Home</a></li>
@@ -26,7 +38,7 @@
   
   <div id="container-consult">  
         <h1>Contact Erica for a Consultation</h1> 
-    <form class="form-consult" autocomplete="on" method="POST">
+    <form class="form-consult" autocomplete="on" method="POST" onsubmit="DisplayMultiLineAlert ()" />
        
         <label for="companyname" >Company Name</label> 
         <input type="text" id="companyname"><br>
