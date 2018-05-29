@@ -45,8 +45,7 @@ a:hover {
 div.main-nav {
     width: 100%;
     background: black;
-    
-        }
+    }
 
 
 .nav {
@@ -55,6 +54,7 @@ div.main-nav {
     margin-left: 510px;
     margin-top: 5px;
     position: relative;
+    
     
      }
 
@@ -251,3 +251,7 @@ input:required:focus {
 
         }
       }   
+
+
+
+  
