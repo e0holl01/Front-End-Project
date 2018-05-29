@@ -50,7 +50,7 @@ div.main-nav {
 
 .nav {
     display: inline-block; 
-    padding: 0;
+    padding: 2px;
     margin-left: 510px;
     margin-top: 5px;
     position: relative;
@@ -221,7 +221,7 @@ input:required:focus {
 
 
 /*=========== Media Queries=========== */  
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1400px) {
     #container-consult, textarea {
 		width: 90%;
     }
@@ -240,18 +240,18 @@ input:required:focus {
     }     
 
     @media only screen and (max-width: 1600px) {
-       .title {
-          display: none;
-        }
-
-      .nav {
-            float: right;
-            display: block;
-            position: relative;
-
-        }
-      }   
-
-
+        .title {
+           display: none;
+         }
+ 
+       .nav {
+             float: right;
+             display: block;
+             position: relative;
+             margin: 0 auto;
+             top: -21px;
+         }
+       }   
+ 
 
   
