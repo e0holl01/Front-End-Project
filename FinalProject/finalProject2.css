@@ -1,0 +1,202 @@
+   /* ===========Mobile First Approach=========== */ 
+ 
+header{
+    background-color: black;
+    width: 100%;
+    
+    
+}
+
+
+/* ===========Background Color=========== */
+body {
+    background-color: floralwhite;
+   
+    }  
+
+
+/* ===========Title - QA by Erica =========== */
+.title {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    float: left;
+    bottom: 25px;
+    position: relative;
+    left: 6px;  
+    display: none;
+    
+    
+}
+
+.title::before,
+.title::after {
+    content: "";                /* ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin: 0 20px;
+
+}
+
+.mobileToggle {
+    background-color: black;
+    color: yellow;
+    position: relative;
+    top: 0px;
+    right: 0;
+    /* width: 14px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 1%
+}
+
+div.main-nav{
+    display: none;
+    text-decoration: none;
+    color:gainsboro;
+    width: 100%;
+     
+
+}
+.main-nav li{
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+    padding: 24px 0px 0px 0px;
+    text-align: center;
+    
+    
+   
+
+}
+
+.nav {
+    float: right;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    top: -21px;
+    width: 100%;
+}
+
+.nav {
+    
+    width: 100%;
+    background: black;  
+    position: relative;
+    text-align: center;
+    top: 4px;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    display: inline-block;
+    
+
+}
+a {
+    text-decoration: none;
+    }
+
+a:hover {
+    color: yellow;
+
+    
+}
+
+
+/*=========== Media Queries=========== */
+@media(min-width: 700px){
+    .mobileToggle{
+        display: none;
+    }
+    .main-nav{
+        display: inline-block !important;
+    }
+    .main-nav li{
+        width: 15%;
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    .nav {
+        
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+        top: 10px;
+        width: 100%;
+    }
+
+  
+    }
+   /* ===========Title=========== */ 
+    .title {
+        color: gainsboro;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        float: left;
+        top: 35px;
+        position: relative;
+        left: 6px;
+        display: none;
+        }
+
+    .title::before,
+    .title::after {
+        content: "";                /* ==========Pseudo-element for Title =========== */
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: gainsboro;
+        margin: 0 20px; 
+                
+                }     
+
+
+    form {
+        text-decoration-color: gray;
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+        margin: 0 auto;
+        max-width: 500px;  
+  }
+@media(min-width: 1600px){
+    .mobileToggle{
+        display: none;
+    }
+    .main-nav{
+        display: inline-block !important;
+    }
+    .nav li{
+        width: 10%;
+        display: inline-block;
+        float: right;
+    }
+
+
+
+    .nav {
+        float: right;
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+        top: 10px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 699px){
+    .title {
+        color: gainsboro;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        float: left;
+        top: 35px;
+        position: relative;
+        display: none;
+        left: 6px;
+    }
+    }

@@ -1,80 +1,21 @@
-/* ===========Background Color=========== */
 
 
-:root {
-    background-color: floralwhite;
-    }
-
-/* ===========Title - QA by Erica =========== */
-.title {
-    color: gainsboro;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    float: left;
-    bottom: 25px;
-    position: relative;
-    z-index: 999;
-    left: 6px;
-}
 
 
-.title::before,
-.title::after {
-    content: "";                /* ==========Pseudo-element for Title =========== */
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: gainsboro;
-    margin: 0 20px;
 
-}
 
-/*===========Nav Link Styles=========== */
-a {
-    text-decoration: none;
-    }
 
-a:hover {
-    color: yellow;
-}
+
 
 
 
 /*=========== Nav Section Styles=========== */
 
-div.main-nav {
-    width: 100%;
-    background: black;
-    }
 
 
-.nav {
-    display: inline-block; 
-    padding: 2px;
-    margin-left: 510px;
-    margin-top: 5px;
-    position: relative;
-    
-    
-     }
 
 
-ul {
-    position: relative;
-    text-align: center;
-    top: 4px;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    background-color: black;
-    
-     }
 
-li {
-    display: inline;
-    text-align: center;
-    padding: 5px 10px 10px 10px;
-     }     
 
 li a {
    color: gainsboro;
@@ -180,6 +121,11 @@ textarea {
     background-color: whitesmoke;
     width: 480px;
     height: 150px;
+    resize: none;
+    border: 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    border-bottom: 3px solid rgba(0,0,0, 0.05);
+
 }
 
 .button {
@@ -200,7 +146,7 @@ input:required:focus {
 /*===========About Page=========== */
 
 .LI-profile-badge {
-    padding-top: 10px;
+    padding-top: 1%;
     padding-left: 45%;
     padding-right: 45%;
     width: 100%;
@@ -220,8 +166,12 @@ input:required:focus {
 
 
 
+ 
+
+
+  
 /*=========== Media Queries=========== */  
-  @media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
     #container-consult, textarea {
 		width: 90%;
     }
@@ -235,23 +185,13 @@ input:required:focus {
         margin-right: 20px;
           }
     
-
+    
 
     }     
 
-    @media only screen and (max-width: 1600px) {
-        .title {
-           display: none;
-         }
- 
-       .nav {
-             float: right;
-             display: block;
-             position: relative;
-             margin: 0 auto;
-             top: -21px;
-         }
-       }   
- 
 
-  
+
+
+
+
+    }
