@@ -3,7 +3,7 @@
 header{
     background-color: black;
     width: 100%;
-    
+
     
 }
 
@@ -20,27 +20,15 @@ body {
     color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     float: left;
-    bottom: 25px;
     position: relative;
     left: 6px;  
     display: none;
-    
-    
+    z-index: 1;
+    top: 65px;
 }
 
-.title::before,
-.title::after {
-    content: "";                /* ==========Pseudo-element for Title =========== */
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: gainsboro;
-    margin: 0 20px;
 
-}
-
-.mobileToggle {
+.mobileToggle {   /*=========== Named Menu =========== */
     background-color: black;
     color: yellow;
     position: relative;
@@ -66,8 +54,7 @@ div.main-nav{
     display: inline-block;
     padding: 24px 0px 0px 0px;
     text-align: center;
-    
-    
+     
    
 
 }
@@ -95,6 +82,13 @@ div.main-nav{
     
 
 }
+
+/*=========== Nav Link Styles=========== */
+li a {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+ }  
 a {
     text-decoration: none;
     }
@@ -104,6 +98,31 @@ a:hover {
 
     
 }
+
+/*=========== Home Page=========== */
+
+.main-testing {
+    margin: 0 auto;
+    width: 100%
+}
+
+
+h1 {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    
+    /*===========Also on Schedule Page=========== */
+}
+
+p {
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+   }
 
 
 /*=========== Media Queries=========== */
@@ -130,29 +149,27 @@ a:hover {
     }
 
   
+  /* ===========Title=========== */ 
+  .title {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 6px;
+     
     }
-   /* ===========Title=========== */ 
-    .title {
-        color: gainsboro;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        float: left;
-        top: 35px;
-        position: relative;
-        left: 6px;
-        display: none;
-        }
 
-    .title::before,
-    .title::after {
-        content: "";                /* ==========Pseudo-element for Title =========== */
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: gainsboro;
-        margin: 0 20px; 
-                
-                }     
+.title::before,
+.title::after {
+    content: "";                /* ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin: 0 20px; 
+            
+            }      
 
 
     form {
@@ -173,7 +190,10 @@ a:hover {
     .nav li{
         width: 10%;
         display: inline-block;
-        float: right;
+        
+    }
+    .nav li:first-of-type{
+        margin-left: 47%;
     }
 
 
