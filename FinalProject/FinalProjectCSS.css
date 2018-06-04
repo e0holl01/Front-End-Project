@@ -99,9 +99,8 @@ input:required:focus {
 .LI-profile-badge {
     padding-top: 1%;
     padding-left: 45%;
-    padding-right: 45%;
-    width: 100%;
-
+    padding-right: -4%;
+    width: 135%;
 }
 
 /*=========== Attribute Selectors=========== */
