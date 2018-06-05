@@ -4,6 +4,16 @@ header{
     
 }
 
+footer {
+    position: fixed;
+    display: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gainsboro;
+    text-align: center;
+}
 
 /* ===========Background Color=========== */
 body {
@@ -89,6 +99,16 @@ a:hover {
     
 }
 
+
+.linkedin {
+    color: gray;
+    font-weight: bold;
+      
+}
+.linkedin:visited{
+    color: gray
+
+}   
 /*=========== Home Page=========== */
 
 .main-testing {
@@ -112,10 +132,45 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-    position: fixed;
+    position: relative;
   
    }
 
+
+
+   .uat-page {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.uat-page:visited{
+    color: gray
+
+}   
+
+
+.performance-page {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.performance-page:visited{
+    color: gray
+
+}   
+
+.consult-page {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.consult-page:visited{
+    color: gray
+
+}   
 
 /*=========== UAT Page=========== */
 
@@ -131,12 +186,32 @@ h1 {
     padding-top: 10px;
 }
 
+.endtest {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
 
+.endtest:visited{
+    color: gray
+
+}
 
    /*=========== Performance Page=========== */
 .performance-testing {
     margin: 0 auto;
     width: 100%;
+
+}
+
+.blazemeter {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.blazemeter:visited{
+    color: gray
 
 }
 
@@ -227,16 +302,18 @@ input:required:focus {
 	margin: auto;
 }
 
-
-/*=========== About Page =========== */
-
-
-
-      
+     
 
 
 /*=========== Media Queries=========== */
+@media(max-width: 699px){
+    header {
+        width: 100%;
+        
 
+    }
+
+}
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
@@ -258,6 +335,12 @@ input:required:focus {
         top: 10px;
         width: 100%;
     }
+
+    footer {
+        
+        display: none;
+      
+    } 
 
   
   /* ===========Title=========== */ 
@@ -292,17 +375,7 @@ input:required:focus {
         max-width: 500px;  
   }
 
-  p {
-    color: gray;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.5em;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
-    position: fixed;
-    left: 20%;
-    right: 20%;
-   }
+
 
 
 @media(min-width: 1600px){
@@ -333,6 +406,17 @@ input:required:focus {
     }
 }
 
+}
+
+footer {
+    position: fixed;
+    display: inline;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gainsboro;
+    text-align: center;
 }
 
 @media(max-width: 699px){
