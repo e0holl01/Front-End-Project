@@ -1,9 +1,6 @@
    /* ===========Mobile First Approach=========== */ 
- 
 header{
     background-color: black;
-    width: 100%;
-
     
 }
 
@@ -59,17 +56,10 @@ div.main-nav{
 
 }
 
-.nav {
-    float: right;
-    display: inline-block;
-    position: relative;
-    margin: 0 auto;
-    top: -21px;
-    width: 100%;
-}
+
 
 .nav {
-    
+    float: right;
     width: 100%;
     background: black;  
     position: relative;
@@ -122,6 +112,8 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
+    position: fixed;
+  
    }
 
 
@@ -137,21 +129,11 @@ h1 {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
-    
-    /*===========Also on Schedule Page=========== */
 }
 
-p {
-    color: gray;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.5em;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
-   }
 
 
-   /*=========== UAT Page=========== */
+   /*=========== Performance Page=========== */
 .performance-testing {
     margin: 0 auto;
     width: 100%;
@@ -161,13 +143,15 @@ p {
 /*=========== Schedule a Consultation page=========== */
 
 form {
-    display: table;
+    display: table-cell;
     text-decoration-color: gray;
     color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 45%;
     margin: 0 auto;
-    max-width: 500px;    
+    vertical-align: middle;
+    width: 100%;
+    
+    
 }
 
 #companyname, #firstname, #lastname, #email, #phonenumber {
@@ -194,6 +178,8 @@ textarea {
   background-color: whitesmoke;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
+
+
 
 label {
   display:block;
@@ -233,6 +219,7 @@ input:required:focus {
 /*=========== Attribute Selectors=========== */
 .form-consult {
     padding: 20px 25px;	
+    width: 100%;
 }
 
 #container-consult {
@@ -249,13 +236,7 @@ input:required:focus {
 
 
 /*=========== Media Queries=========== */
-@media(min-width: 60px){
-    header {
-        width: 100%;
 
-    }
-
-}
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
@@ -310,6 +291,20 @@ input:required:focus {
         margin: 0 auto;
         max-width: 500px;  
   }
+
+  p {
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    position: fixed;
+    left: 20%;
+    right: 20%;
+   }
+
+
 @media(min-width: 1600px){
     .mobileToggle{
         display: none;
@@ -350,4 +345,9 @@ input:required:focus {
         display: none;
         left: 6px;
     }
+
+
+
+    }
+
     }
