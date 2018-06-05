@@ -1,12 +1,13 @@
    /* ===========Mobile First Approach=========== */ 
 header{
     background-color: black;
+    width: 100%;
+    right: 0;
     
 }
 
 footer {
     position: fixed;
-    display: none;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -18,7 +19,7 @@ footer {
 /* ===========Background Color=========== */
 body {
     background-color: floralwhite;
-   
+    width:
     }  
 
 
@@ -101,12 +102,12 @@ a:hover {
 
 
 .linkedin {
-    color: gray;
+    color: gainsboro;
     font-weight: bold;
       
 }
 .linkedin:visited{
-    color: gray
+    color: gainsboro
 
 }   
 /*=========== Home Page=========== */
@@ -168,7 +169,7 @@ p {
 }
 
 .consult-page:visited{
-    color: gray
+    color: gray 
 
 }   
 
@@ -342,6 +343,8 @@ input:required:focus {
       
     } 
 
+    
+
   
   /* ===========Title=========== */ 
   .title {
@@ -416,8 +419,17 @@ footer {
     width: 100%;
     background-color: black;
     color: gainsboro;
-    text-align: center;
+    text-align: left;
+   
 }
+.contact-footer {
+
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: gainsboro;
+    }
 
 @media(max-width: 699px){
     .title {
@@ -430,8 +442,22 @@ footer {
         left: 6px;
     }
 
+    footer {
+        position: fixed;
+        display: none;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: gainsboro;
+        text-align: center;
+    }
 
 
+    header {
+width: 100%;
+
+    }
     }
 
     }
