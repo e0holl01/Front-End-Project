@@ -1,15 +1,23 @@
 $(function(){
+    $('#flashMessage').hide();
+
     $(".mobileToggle").click(function(){
         $(".main-nav").slideToggle();
     })
+
+    $('#submit').on("click",function() {
+        showMessage();
+    });
+
+    $(document).on('submit', function (event) {
+        event.preventDefault();
+        return false;
+    })
 })
 
-
-$(document).ready(function(){
-    $('.button').click(function(){
-        alert("Your information has not been submitted because I do not know back-end programming.");
-    });
-});
-
-
-$('#flashMessage').hide().slideDown(1000).delay(3000).slideUp();
+function showMessage() {
+    var form = $("form")[0]
+    if(form.checkValidity()) {
+        $('#flashMessage').slideDown(1000).delay(3000).slideUp();
+    }
+}
