@@ -18,6 +18,6 @@ $(function(){
 function showMessage() {
     var form = $("form")[0]
     if(form.checkValidity()) {
-        $('#flashMessage').slideDown(1000).delay(3000).slideUp();
+        $('#flashMessage').slideDown(900).delay(3000).slideUp(900);
     }
 }
