@@ -285,6 +285,7 @@ textarea {
   padding-right: 20px;
   text-transform: uppercase;
   box-shadow:inset 0 1px 0 rgba(0,0,0,0.03) ;
+  margin-bottom: 10px;
 }
 
 input:required:focus {
