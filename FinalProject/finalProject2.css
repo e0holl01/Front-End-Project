@@ -89,6 +89,7 @@ div.main-nav{
 li a {
     color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: -100%;
  
  }  
 a {
