@@ -2,7 +2,8 @@
 header{
     background-color: black;
     width: 100%;
-    right: 0;
+   
+
     
 }
 
@@ -89,9 +90,10 @@ div.main-nav{
 li a {
     color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-right: -100%;
- 
+    
  }  
+
+
 a {
     text-decoration: none;
     }
@@ -123,10 +125,10 @@ a:hover {
 h1 {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 10px;
-    
-    /*===========Also on Schedule Page=========== */
+   
 }
+    /*===========Also on Schedule Page=========== */
+
 
 p {
     color: gray;
@@ -219,7 +221,12 @@ h1 {
 }
 
 /*=========== Schedule a Consultation page=========== */
+.scheduleConsult-heading {
+    font-size: auto;
+    padding: 0;
+    
 
+}
 form {
     display: table-cell;
     text-decoration-color: gray;
@@ -311,8 +318,10 @@ input:required:focus {
 
 /*=========== Attribute Selectors=========== */
 .form-consult {
-    padding: 20px 25px;	
-    width: 100%;
+    padding: 0px 25px;	
+    margin: 0 auto;
+  
+   
 }
 
 #container-consult {
@@ -324,17 +333,22 @@ input:required:focus {
 
 
 /*=========== Media Queries=========== */
-@media(max-width: 699px){
-    header {
-        width: 100%;
-        
+
+@media(max-width: 373px) {
+    .scheduleConsult-heading {
+        display: none;
 
     }
-
+ 
 }
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
+    }
+
+    header {
+        width: 100%;
+
     }
     .main-nav{
         display: inline-block !important;
@@ -478,7 +492,7 @@ footer {
 
 
     header {
-width: 100%;
+width: 130%;
 
     }
     }
