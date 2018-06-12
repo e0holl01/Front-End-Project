@@ -14,7 +14,7 @@ footer {
     width: 100%;
     background-color: black;
     color: gainsboro;
-    text-align: center;
+    text-align: left;
     display: none;
 }
 
@@ -63,7 +63,7 @@ div.main-nav{
     width: 100%;
     display: inline-block;
     padding: 24px 0px 0px 0px;
-    text-align: right;
+    text-align: left;
     -webkit-padding-before: 0px;
      
    
@@ -77,7 +77,7 @@ div.main-nav{
     width: 100%;
     background: black;  
     position: relative;
-    text-align: center;
+    text-align: right;
     top: 4px;
     margin: 10px;
     padding: 10px;
@@ -372,6 +372,7 @@ input:required:focus {
         
         display: inline-block;
         position: relative;
+        float: right;
         margin: 0 auto;
         top: 10px;
         width: 100%;
@@ -383,6 +384,7 @@ input:required:focus {
         
         display: none;
         width: 100%;
+      
       
     } 
 
@@ -440,10 +442,11 @@ input:required:focus {
         width: 10%;
         display: inline-block;
         margin-right: 0px;
+          
         
     }
     .nav li:first-of-type{
-        margin-left: 47%;
+        margin-left: 50%;
     }
 
 
@@ -455,6 +458,7 @@ input:required:focus {
         margin: 0 auto;
         top: 10px;
         width: 100%;
+       
     }
 }
 
@@ -463,13 +467,13 @@ input:required:focus {
 footer {
     position: fixed;
     display: inline;
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: black;
-    color: gainsboro;
-    text-align: left;
-    justify-content: left;
+ 
+    
+
+    
    
 }
 .contact-footer {
@@ -502,7 +506,7 @@ footer {
         width: 100%;
         background-color: black;
         color: gainsboro;
-        text-align: center;
+        text-align: left;
     }
 
 
