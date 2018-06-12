@@ -2,7 +2,7 @@
 header{
     background-color: black;
     width: 100%;
-   
+  
    
 
     
@@ -135,10 +135,8 @@ p {
     color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: justify;
     position: relative;
     
@@ -380,17 +378,11 @@ input:required:focus {
     footer {
         
         display: none;
+        width: 100%;
       
     } 
 
    
-.title {
-
-
-    z-index: 1;
-    top: 39px;
-    margin-right: auto;
-}
 
   
   /* ===========Title=========== */ 
@@ -400,6 +392,11 @@ input:required:focus {
     display: inline-block;
     position: relative;
     left: 6px;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 1;
+    top: 52px;
+    margin-right: auto;
      
     }
 
@@ -468,6 +465,7 @@ footer {
     background-color: black;
     color: gainsboro;
     text-align: left;
+    justify-content: left;
    
 }
 .contact-footer {
@@ -478,6 +476,8 @@ footer {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: gainsboro;
     }
+
+
 
 @media(max-width: 699px){
     .title {
@@ -504,6 +504,10 @@ footer {
 
     header {
 width: 130%;
+
+
+
+}
 
     }
     }
