@@ -63,7 +63,7 @@ div.main-nav{
     width: 100%;
     display: inline-block;
     padding: 24px 0px 0px 0px;
-    text-align: left;
+    text-align: right;
     -webkit-padding-before: 0px;
      
    
@@ -372,7 +372,6 @@ input:required:focus {
         
         display: inline-block;
         position: relative;
-        float: right;
         margin: 0 auto;
         top: 10px;
         width: 100%;
@@ -384,7 +383,6 @@ input:required:focus {
         
         display: none;
         width: 100%;
-      
       
     } 
 
@@ -442,7 +440,6 @@ input:required:focus {
         width: 10%;
         display: inline-block;
         margin-right: 0px;
-          
         
     }
     .nav li:first-of-type{
@@ -458,7 +455,6 @@ input:required:focus {
         margin: 0 auto;
         top: 10px;
         width: 100%;
-       
     }
 }
 
@@ -467,12 +463,12 @@ input:required:focus {
 footer {
     position: fixed;
     display: inline;
+    left: 0;
     bottom: 0;
     width: 100%;
     background-color: black;
- 
     
-
+    
     
    
 }
@@ -483,6 +479,7 @@ footer {
         margin-left: 15px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: gainsboro;
+        text-align: left;
     }
 
 
