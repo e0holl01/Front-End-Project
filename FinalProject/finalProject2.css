@@ -62,14 +62,27 @@ div.main-nav{
     list-style: none;
     width: 100%;
     display: inline-block;
-    padding: 24px 0px 0px 0px;
-    text-align: right;
-    -webkit-padding-before: 0px;
+    /* padding: 24px 0px 0px 0px; */
+    text-align: left;
+    margin-left: 30px;
+    /* -webkit-padding-before: 0px; */
      
    
 
 }
 
+li::before
+ {
+    content: "";                /* ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin: 0 20px; 
+   
+            
+            }  
 
 
 .nav {
@@ -119,7 +132,7 @@ a:hover {
 
 .main-testing {
     margin: 0 auto;
-    width: 100%
+    
 }
 
 
@@ -367,7 +380,18 @@ input:required:focus {
         padding-left: 5px;
       
     }
-
+    li::before
+     {
+        content: "";                /* ==========Pseudo-element for Title =========== */
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: gainsboro;
+        margin: 0 20px; 
+        display: none;
+                
+                }  
     .nav {
         
         display: inline-block;
