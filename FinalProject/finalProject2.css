@@ -313,8 +313,9 @@ textarea {
   padding-right: 20px;
   text-transform: uppercase;
   box-shadow:inset 0 1px 0 rgba(0,0,0,0.03) ;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 41px;
+  margin-top: -4px;
+  padding-bottom: 0px;
   
 }
 
@@ -412,6 +413,7 @@ input:required:focus {
         
         display: none;
         width: 100%;
+    
       
     } 
 
