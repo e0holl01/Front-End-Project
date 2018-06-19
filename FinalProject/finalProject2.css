@@ -269,22 +269,19 @@ textarea {
   color: black;
   font-weight: 300; 
   width: 100%;
-  /* border: none; */
   border-style: groove;
   height: auto;
   padding: 15px;
   outline: 0;
   margin-bottom: 1.2em;
-  border-radius: .3em;
-  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  border-radius: 1.3em;
+  border-bottom: 3px solid darkgray;
   background-color: whitesmoke;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+
 
 
  
 }
-
-
 
 label {
   display:block;
@@ -294,12 +291,14 @@ label {
 
 textarea {
     background-color: whitesmoke;
+    border-style: groove;
     width: 100%;
     height: 150px;
     resize: none;
-    border: 0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    border-bottom: 3px solid rgba(0,0,0, 0.05);
+    margin-bottom: 1.2em;
+    border-radius: 1.3em;
+    border-bottom: 3px solid darkgray;
+    background-color: whitesmoke;
 
 }
 
