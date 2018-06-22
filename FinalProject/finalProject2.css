@@ -238,8 +238,9 @@ h1 {
 
 /*=========== Schedule a Consultation page=========== */
 .scheduleConsult-heading {
-    font-size: auto;
+    /* font-size: auto; */
     padding: 0;
+    font-weight: bold;
     
 
 }

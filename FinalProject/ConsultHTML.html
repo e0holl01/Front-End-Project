@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
-    <!--linked style sheets-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+     <!--Normalize and Project linked style sheets-->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="FinalProject2.css">
    
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>QA by Erica</title>
 </head>
-
-
 
 <body>
       <!--nav bar/header-->
     <header class="main-header">
-        <h1 class="title">QA by Erica</h1> <!--hides with media query-->
-        <div class="main-nav">
-            <ul class="nav">
-                <li><a href="HomeHTML.html">Home</a></li>
-                <li><a href="UAT-Testing.html">UAT Testing</a></li>
-                <li><a href="PerformanceTesting.html">Performance Testing</a></li>
-                <li><a href="ConsultHTML.html">Schedule a Consultation</a></li>
-             
-             </ul>
-        </div>
-        <span class="mobileToggle">Menu</button>  <!--allows for mobile view-->
-        
-    </header>
+    <h1 class="title">QA by Erica</h1> <!--hides with media query-->
+    <div class="main-nav">
+        <ul class="nav">
+            <li><a href="HomeHTML.html" >Home</a></li>
+            <li><a href="UAT-Testing.html">UAT Testing</a></li>
+            <li><a href="PerformanceTesting.html">Performance Testing</a></li>
+            <li><a href="ConsultHTML.html">Schedule a Consultation</a></li>
+         
+         </ul>
+    </div>
+    <span class="mobileToggle">Menu</span>  <!--allows for mobile view-->
+    
+</header>
     <br>
     <div id="flashMessage">
             Your information has not been submitted because I do not know back-end programming :)
         </div> 
   <div id="container-consult">  
-        <h1 class="scheduleConsult-heading">Schedule a Consultation</h1> 
-    <form class="form-consult" autocomplete="on"> 
+        <h1 class="scheduleConsult-heading container text-center display-5">Schedule a Consultation</h1> 
+    <form class="form-consult text-justify" autocomplete="on"> 
         
         <!--look up mailto -->
        
@@ -63,7 +65,7 @@
         <label for="testingneeds">Tell Erica more about your Software Testing Needs:</label>
         <textarea name="testingneeds" required></textarea><br>
 
-        <input type="submit" id="submit" value="Submit"> <!--hitting submit shows flash message-->
+        <input type="submit" id="submit" value="Submit" class="Submit"> <!--hitting submit shows flash message-->
         
 
 
