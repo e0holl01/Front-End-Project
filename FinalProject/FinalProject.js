@@ -22,3 +22,6 @@ function showMessage() {
         $('#flashMessage').slideDown(900).delay(3000).slideUp(900);
     }
 }
+
+
+

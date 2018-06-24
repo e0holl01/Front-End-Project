@@ -82,7 +82,7 @@ li::before
     margin: 0 20px; 
    
             
-            }  
+           }  
 
 
 .nav {
@@ -377,10 +377,19 @@ input:required:focus {
     }
     
     .main-nav{
-        display: inline-block !important;
+        display: inline-block !important;}
+      
          
-        
-    }
+    .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+          }    
+    
+
+          .sticky + .content {
+            padding-top: 102px;
+          }
     .main-nav li{
         width: 15%;
         display: inline-block;
