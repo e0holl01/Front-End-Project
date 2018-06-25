@@ -14,6 +14,11 @@ $(function(){
         event.preventDefault();
         return false;
     })
+
+ 
+ 
+
+
 })
 
 function showMessage() {
@@ -23,5 +28,4 @@ function showMessage() {
     }
 }
 
-
-
+// need to reset form when submitted. message still needs to show
