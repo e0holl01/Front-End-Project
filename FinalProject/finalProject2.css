@@ -145,6 +145,7 @@ a:hover {
 
 .main-testing {
     margin: 0 auto ;
+   
     
 }
 
@@ -164,6 +165,7 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
+   
 
     
   
@@ -420,7 +422,7 @@ input:required:focus {
         width: 100%;
     }
 
-  
+
 
     footer {
         
@@ -547,10 +549,13 @@ footer {
     }
 
 
-.container-fluid {
-
-
-}
+    p {
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 1.5em;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
 
 
     header {
