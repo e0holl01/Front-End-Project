@@ -7,8 +7,8 @@ header{
 
 }
 
-footer {
-    position: fixed;
+footer, {
+
     left: 0;
     bottom: 0;
     width: 100%;
@@ -16,6 +16,18 @@ footer {
     color: gainsboro;
     text-align: left;
     display: none;
+}
+
+small {
+    text-align: right;
+    float: right;
+    margin-top: -23px;
+    margin-right: 5px;
+    padding-top: 0;
+    color: gainsboro;
+  
+
+
 }
 
 /* ===========Background Color=========== */
@@ -132,7 +144,7 @@ a:hover {
 /*=========== Home Page=========== */
 
 .main-testing {
-    margin: 0 auto;
+    margin: 0 auto ;
     
 }
 
@@ -152,7 +164,7 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-    position: relative;
+
     
   
    }
@@ -238,7 +250,7 @@ h1 {
 
 /*=========== Schedule a Consultation page=========== */
 .scheduleConsult-heading {
-    /* font-size: auto; */
+    font-size: auto;
     padding: 0;
     font-weight: bold;
     
@@ -376,20 +388,11 @@ input:required:focus {
 
     }
     
-    .main-nav{
-        display: inline-block !important;}
+    .main-nav {
+        display: inline-block !important;
+    }
       
-         
-    .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%
-          }    
-    
 
-          .sticky + .content {
-            padding-top: 102px;
-          }
     .main-nav li{
         width: 15%;
         display: inline-block;
@@ -423,11 +426,13 @@ input:required:focus {
         
         display: none;
         width: 100%;
+       
     
       
     } 
 
    
+
 
   
   /* ===========Title=========== */ 
@@ -509,9 +514,7 @@ footer {
     width: 100%;
     background-color: black;
     
-    
-    
-   
+       
 }
 .contact-footer {
 
@@ -523,7 +526,7 @@ footer {
         text-align: left;
     }
 
-
+    
 
 @media(max-width: 699px){
     .title {
@@ -537,15 +540,17 @@ footer {
     }
 
     footer {
-        position: fixed;
+     
         display: none;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: black;
-        color: gainsboro;
-        text-align: left;
+
+    
     }
+
+
+.container-fluid {
+
+
+}
 
 
     header {
