@@ -343,11 +343,10 @@ input:required:focus {
 #flashMessage {
     color:purple;
     background-color: gainsboro;
-    padding: 15px;
     border-radius: 5px;
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin-top: -25px;
     margin-bottom: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
@@ -378,8 +377,12 @@ input:required:focus {
         display: none;
 
     }
+
+    
  
 }
+
+
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
