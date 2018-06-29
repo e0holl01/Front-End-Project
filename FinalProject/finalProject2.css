@@ -255,7 +255,7 @@ p {
 /*=========== Schedule a Consultation page=========== */
 .scheduleConsult-heading {
     font-size: auto;
-    margin-top: 0px;
+    margin-top: 25px;
 
     
 
@@ -347,6 +347,7 @@ input:required:focus {
     border-radius: 5px;
     display: block;
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
