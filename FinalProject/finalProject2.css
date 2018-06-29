@@ -74,14 +74,10 @@ div.main-nav{
     list-style: none;
     width: 100%;
     display: inline-block;
-    /* padding: 24px 0px 0px 0px; */
     text-align: left;
     margin-left: 30px;
-    /* -webkit-padding-before: 0px; */
-    box-sizing: unset; /*keeps nav links from collapsing at 1600 pixels*/
-     
-   
-
+    box-sizing: unset;
+    
 }
 
 li::before
@@ -99,7 +95,7 @@ li::before
 
 
 .nav {
-    float: right;
+   
     width: 100%;
     background: black;  
     position: relative;
@@ -108,13 +104,11 @@ li::before
     margin: 10px;
     padding: 10px;
     background-color: black;
-    box-sizing: unset; /*keeps nav items from collapsing at 1300 px*/
-
+    box-sizing: unset;
+   
     
 
 }
-
-
 
 /*=========== Nav Link Styles=========== */
 li a {
@@ -141,18 +135,26 @@ a:hover {
       
 }
 .linkedin:visited{
-    color: yellow
+    color: yellow;
 
 }   
 
 /*=========== Home Page=========== */
 
 .main-testing {
-    margin: 0 auto ;
+    margin-top: 0px;
+    margin-left: -15px;
    
     
 }
 
+#costofasoftwarebug {
+    position: relative;
+    margin-top: 10px;
+    padding: 0;
+    display: block
+;
+}
 
 .h1 {
     color: gray;
@@ -255,7 +257,7 @@ p {
 /*=========== Schedule a Consultation page=========== */
 .scheduleConsult-heading {
     font-size: auto;
-   margin-top: 0px;
+    margin-top: 0px;
 
     
 
@@ -343,14 +345,16 @@ input:required:focus {
 #flashMessage {
     color:purple;
     background-color: gainsboro;
+    /* padding: 15px; */
     border-radius: 5px;
     display: block;
     width: 100%;
     margin-top: -20px;
+    margin-bottom: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
     font-weight: bold;
-   
+    text-align: center;
 }
 
 /*=========== Attribute Selectors=========== */
@@ -376,12 +380,8 @@ input:required:focus {
         display: none;
 
     }
-
-    
  
 }
-
-
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
@@ -406,7 +406,6 @@ input:required:focus {
         padding-left: 5px;
       
     }
-
     li::before
      {
         content: "";                /* ==========Pseudo-element for Title =========== */
@@ -418,8 +417,7 @@ input:required:focus {
         margin: 0 20px; 
         display: none;
                 
-    }  
-    
+                }  
     .nav {
         
         display: inline-block;
@@ -427,8 +425,8 @@ input:required:focus {
         margin: 0 auto;
         top: 10px;
         width: 100%;
-       
-    } 
+    }
+
 
 
     footer {
@@ -495,9 +493,8 @@ input:required:focus {
         width: 10%;
         display: inline-block;
         margin-right: 0px;
-              
+        
     }
-
     .nav li:first-of-type{
         margin-left: 50%;
     }
@@ -505,13 +502,12 @@ input:required:focus {
 
 
     .nav {
-        float: right;
+        /* float: right; */
         display: inline-block;
         position: relative;
         margin: 0 auto;
         top: 10px;
         width: 100%;
-      
     }
 }
 
@@ -565,8 +561,10 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
         text-align: justify;
-        header {
-    width: 130%;
+
+
+    header {
+width: 130%;
 
 
 
