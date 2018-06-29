@@ -78,6 +78,7 @@ div.main-nav{
     text-align: left;
     margin-left: 30px;
     /* -webkit-padding-before: 0px; */
+    box-sizing: unset; /*keeps nav links from collapsing at 1600 pixels*/
      
    
 
@@ -107,10 +108,13 @@ li::before
     margin: 10px;
     padding: 10px;
     background-color: black;
-   
+    box-sizing: unset; /*keeps nav items from collapsing at 1300 px*/
+
     
 
 }
+
+
 
 /*=========== Nav Link Styles=========== */
 li a {
@@ -399,6 +403,7 @@ input:required:focus {
         padding-left: 5px;
       
     }
+
     li::before
      {
         content: "";                /* ==========Pseudo-element for Title =========== */
@@ -410,7 +415,8 @@ input:required:focus {
         margin: 0 20px; 
         display: none;
                 
-                }  
+    }  
+    
     .nav {
         
         display: inline-block;
@@ -418,8 +424,8 @@ input:required:focus {
         margin: 0 auto;
         top: 10px;
         width: 100%;
-    }
-
+       
+    } 
 
 
     footer {
@@ -486,8 +492,9 @@ input:required:focus {
         width: 10%;
         display: inline-block;
         margin-right: 0px;
-        
+              
     }
+
     .nav li:first-of-type{
         margin-left: 50%;
     }
@@ -501,6 +508,7 @@ input:required:focus {
         margin: 0 auto;
         top: 10px;
         width: 100%;
+      
     }
 }
 
@@ -554,10 +562,8 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
         text-align: justify;
-
-
-    header {
-width: 130%;
+        header {
+    width: 130%;
 
 
 
