@@ -136,12 +136,12 @@ a:hover {
 
 
 .linkedin {
-    color: gainsboro;
+    color: yellow;
     font-weight: bold;
       
 }
 .linkedin:visited{
-    color: gainsboro
+    color: yellow
 
 }   
 
@@ -533,7 +533,7 @@ footer {
         margin-bottom: 3px;
         margin-left: 15px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: gainsboro;
+        color: yellow;
         text-align: left;
     }
 
