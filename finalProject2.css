@@ -258,6 +258,7 @@ p {
 .scheduleConsult-heading {
     font-size: auto;
     margin-top: 0px;
+    padding-top: 30px;
 
     
 
@@ -382,6 +383,16 @@ input:required:focus {
     }
  
 }
+
+@media(max-width:1067px){
+    #flashMessage {
+        margin-top: 46px;
+
+    }
+
+}
+
+
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
@@ -544,6 +555,11 @@ footer {
         position: relative;
         display: none;
         left: 6px;
+    }
+
+    #flashMessage {
+        margin-top: 1px;
+
     }
 
     footer {
