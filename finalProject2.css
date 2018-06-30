@@ -349,8 +349,8 @@ input:required:focus {
     border-radius: 5px;
     display: block;
     width: 100%;
-    margin-top: -20px;
-    margin-bottom: 40px;
+    margin-top: 23px;
+    margin-bottom: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
     font-weight: bold;
