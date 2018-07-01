@@ -1,0 +1,594 @@
+   /* ===========Mobile First Approach=========== */ 
+header{
+    background-color: black;
+    width: 100%;
+   
+   }
+
+}
+
+footer, {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gainsboro;
+    text-align: left;
+    display: none;
+}
+
+small {
+    text-align: right;
+    float: right;
+    margin-top: -23px;
+    margin-right: 10px;
+    padding-top: 0;
+    color: gainsboro;
+  
+
+
+}
+
+/* ===========Background Color=========== */
+body {
+    background-color: floralwhite;
+    width:
+    }  
+
+
+/* ===========Title - QA by Erica =========== */
+.title {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    float: left;
+    position: relative;
+    left: 6px;  
+    display: none;
+    z-index: 1;
+    top: 58px;
+}
+
+
+.mobileToggle {   /*=========== Named Menu =========== */
+    background-color: black;
+    color: yellow;
+    position: relative;
+    top: 0px;
+    right: 0;
+    /* width: 14px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+div.main-nav{
+    display: none;
+    text-decoration: none;
+    color:gainsboro;
+    width: 100%;
+     
+
+}
+.main-nav li{
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 30px;
+    box-sizing: unset;
+    
+}
+
+li::before
+ {
+    content: "";                /* ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin: 0 20px; 
+   
+            
+           }  
+
+
+.nav {
+   
+    width: 100%;
+    background: black;  
+    position: relative;
+    text-align: right;
+    top: 4px;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    box-sizing: unset;
+   
+    
+
+}
+
+/*=========== Nav Link Styles=========== */
+li a {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+ }  
+
+
+a {
+    text-decoration: none;
+    }
+
+a:hover {
+    color: yellow;
+
+    
+}
+
+
+.linkedin {
+    color: yellow;
+    font-weight: bold;
+      
+}
+.linkedin:visited{
+    color: yellow;
+
+}   
+
+/*=========== Home Page=========== */
+
+.main-testing {
+    margin-top: 0px;
+    margin-left: -15px;
+   
+    
+}
+
+#costofasoftwarebug {
+    position: relative;
+    margin-top: 10px;
+    padding: 0;
+    display: block
+;
+}
+
+.h1 {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    
+   
+}
+    /*===========Also on Schedule Page=========== */
+
+
+p {
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+   
+
+    
+  
+   }
+
+
+
+   .uat-page {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.uat-page:visited{
+    color: gray
+
+}   
+
+
+.performance-page {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.performance-page:visited{
+    color: gray
+
+}   
+
+.consult-page {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.consult-page:visited{
+    color: gray 
+
+}   
+
+/*=========== UAT Page=========== */
+
+.uat-testing {
+    margin: 0 auto;
+    width: 100%
+}
+
+
+
+
+.endtest {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.endtest:visited{
+    color: gray
+
+}
+
+   /*=========== Performance Page=========== */
+.performance-testing {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.blazemeter {
+    color: gray;
+    font-weight: bold;
+    text-decoration:underline;     
+}
+
+.blazemeter:visited{
+    color: gray
+
+}
+
+/*=========== Schedule a Consultation page=========== */
+.scheduleConsult-heading {
+    font-size: auto;
+    margin-top: 0px;
+    padding-top: 30px;
+
+    
+
+}
+form {
+    display: table-cell;
+    text-decoration-color: gray;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 100%;
+    
+    
+}
+
+#companyname, #firstname, #lastname, #email, #phonenumber {
+    text-transform: uppercase;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="radio"]
+textarea {
+  font-size: 1em;
+  color: black;
+  font-weight: 300; 
+  width: 100%;
+  border-style: groove;
+  height: auto;
+  padding: 15px;
+  outline: 0;
+  margin-bottom: 1.2em;
+  border-radius: 1.3em;
+  border-bottom: 3px solid darkgray;
+  background-color: whitesmoke;
+
+
+
+ 
+}
+
+label {
+  display:block;
+  margin-bottom: 0.5em;
+   
+}
+
+textarea {
+    background-color: whitesmoke;
+    border-style: groove;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin-bottom: 1.2em;
+    border-radius: 1.3em;
+    border-bottom: 3px solid darkgray;
+    background-color: whitesmoke;
+
+}
+
+
+
+#submit {
+  cursor: pointer;  
+  font-size: 1em;
+  font-weight: 300;
+  color: grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  box-shadow:inset 0 1px 0 rgba(0,0,0,0.03) ;
+  margin-bottom: 41px;
+  margin-top: -4px;
+  padding-bottom: 0px;
+  
+}
+
+input:required:focus {
+    border:1px solid tomato;
+}
+
+#flashMessage {
+    color:purple;
+    background-color: gainsboro;
+    /* padding: 15px; */
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: -16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*=========== Attribute Selectors=========== */
+.form-consult {
+    padding: 0px 25px;	
+    margin: 0 auto;
+  
+   
+}
+
+#container-consult {
+	max-width: 500px;
+	margin: auto;
+}
+
+     
+
+
+/*=========== Media Queries=========== */
+
+@media(max-width: 373px) {
+    .scheduleConsult-heading {
+        display: none;
+
+    }
+ 
+}
+
+@media(max-width:1067px){
+    #flashMessage {
+        margin-top: 46px;
+
+    }
+
+}
+
+
+@media(min-width: 700px){
+    .mobileToggle{
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        margin-top: -60px;
+        padding-top: 0px;
+      
+
+    }
+    
+    .main-nav {
+        display: inline-block !important;
+    }
+      
+
+    .main-nav li{
+        width: 15%;
+        display: inline-block;
+        padding-left: 5px;
+      
+    }
+    li::before
+     {
+        content: "";                /* ==========Pseudo-element for Title =========== */
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: gainsboro;
+        margin: 0 20px; 
+        display: none;
+                
+                }  
+    .nav {
+        
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+        top: 10px;
+        width: 100%;
+    }
+
+
+
+    footer {
+        
+        display: none;
+        width: 100%;
+       
+    
+      
+    } 
+
+   
+
+
+  
+  /* ===========Title=========== */ 
+  .title {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 6px;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 1;
+    top: 1;
+    margin-right: auto;
+     
+    }
+
+.title::before,
+.title::after {
+    content: "";                /* ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin: 0 20px; 
+            
+            }      
+
+
+    form {
+        text-decoration-color: gray;
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+        margin: 0 auto;
+        max-width: 500px;  
+  }
+
+
+
+
+@media(min-width: 1600px){
+    .mobileToggle{
+        display: none;
+    }
+    .main-nav{
+        display: inline-block !important;
+    }
+    .nav li{
+        width: 10%;
+        display: inline-block;
+        margin-right: 0px;
+        
+    }
+    .nav li:first-of-type{
+        margin-left: 50%;
+    }
+
+
+
+    .nav {
+        /* float: right; */
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+        top: 10px;
+        width: 100%;
+    }
+}
+
+}
+
+footer {
+    position: fixed;
+    display: inline;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    
+       
+}
+.contact-footer {
+
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: yellow;
+        text-align: left;
+    }
+
+    
+
+@media(max-width: 699px){
+    .title {
+        color: gainsboro;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        float: left;
+        top: 35px;
+        position: relative;
+        display: none;
+        left: 6px;
+    }
+
+    #flashMessage {
+        margin-top: 1px;
+
+    }
+
+    footer {
+     
+        display: none;
+
+    
+    }
+
+
+    p {
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 1.5em;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+
+
+    header {
+width: 130%;
+
+
+
+}
+
+    }
+    }
+
+    }
+
+  

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+     <!--Normalize and Project linked style sheets-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="FinalProject2.css">
+   
+
+    <title>QA by Erica</title>
+</head>
+
+<body>
+      <!--nav bar/header-->
+    <header class="main-header fixed-top">
+    <h1 class="title">QA by Erica</h1> <!--hides with media query-->
+    <div class="main-nav">
+        <ul class="nav">
+            <li><a href="HomeHTML.html" >Home</a></li>
+            <li><a href="UAT-Testing.html">UAT Testing</a></li>
+            <li><a href="PerformanceTesting.html">Performance Testing</a></li>
+            <li><a href="ConsultHTML.html">Schedule a Consultation</a></li>
+         
+         </ul>
+    </div>
+    <span class="mobileToggle">Menu</span>  <!--allows for mobile view-->
+    
+</header>
+    <br>
+    <div class="alert alert-dismissible text-center" id="flashMessage">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Your information has not been submitted because I do not know back-end 
+            programming :)
+    </div> 
+  <div id="container-consult">  
+        <h1 class="scheduleConsult-heading text-center h1">Schedule a Consultation</h1> 
+    <form class="form-consult container text-justify" autocomplete="on"  
+    onsubmit="parent.scrollTo(0, 0); return true"> 
+        
+        <!--look up mailto -->
+       
+        <label for="companyname" >Company Name</label> <!--company name is not required-->
+        <input type="text" id="companyname"><br>
+
+        <label for="firstname">First Name</label> 
+        <input type="text" id="firstname" required><br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" required><br>
+
+        <label for="testing-type-needed">Type of Testing Needed:</label> 
+        <input type="radio" name="testingtype" value="uat" required> User Acceptance Testing<br>
+        <input type="radio" name="testingtype" value="performance"> Performance Testing<br>
+        <input type="radio" name="testingtype" value="both"> Both<br><br>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="email@website.com" required><br>
+
+        <label for="phonenumber">Telephone Number</label>
+        <input type="tel" id="telephone" required><br><br>
+
+        <label for="testingneeds">Tell Erica more about your Software Testing Needs:</label>
+        <textarea name="testingneeds" required></textarea><br>
+
+        <center> <input type="submit" id="submit" value="Submit"></center>  <!--hitting submit shows flash message-->
+        
+
+
+    </form>
+
+  
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="FinalProject.js"></script>   <!--this javascript is for flash message,
+    submit button and mobile toggle-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+     
+   
+  
+    </body>
+
+    
+    <footer>
+            <p class="contact-footer">
+            Reach out on <a class="linkedin" href="https://www.linkedin.com/in/erica-holland-16264b66" target="blank">LinkedIn</a>!</p>    <small class="copyright" "float-right">&copy; 2018 *QA by Erica*
+                </small>
+        
+          </footer> <!--takes to linkedin-->
+
+    </html>  
