@@ -257,8 +257,8 @@ p {
 /*=========== Schedule a Consultation page=========== */
 .scheduleConsult-heading {
     font-size: auto;
-    margin-top: 0px;
-    padding-top: 30px;
+    margin-top: 45px;
+   
 
     
 
@@ -387,16 +387,41 @@ input:required:focus {
 @media(max-width:1067px){
     #flashMessage {
         margin-top: 46px;
+    }
+    .scheduleConsult-heading {
+        margin-top: 30px;
 
     }
 
 }
 
+@media(min-width: 1068px) {
+    .scheduleConsult-heading{
+        margin-top: 25px;
+
+    }
+
+}
+
+@media(min-width: 374px) {
+    .scheduleConsult-heading {
+        margin-top: 15px;
+
+    }
+
+}
 
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
     }
+
+    .scheduleConsult-heading{
+        margin-top: 45px;
+
+
+    }
+
 
     header {
         width: 100%;
