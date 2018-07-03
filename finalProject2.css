@@ -1,3 +1,4 @@
+  
    /* ===========Mobile First Approach=========== */ 
 header{
     background-color: black;
@@ -394,7 +395,7 @@ input:required:focus {
 @media(max-width: 575px) {
     #costofasoftwarebug {
         position: relative;
-        margin-top: 34px;
+        margin-top: 15px;
     
 }
 
@@ -636,3 +637,5 @@ width: 130%;
     }
 
   
+
+   
