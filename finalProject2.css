@@ -148,14 +148,16 @@ a:hover {
     
 }
 
+
 #costofasoftwarebug {
-    position: relative;
-    margin-top: 10px;
-    padding: 0;
-    display: block;
-    width: 100%;
-    height: 175px;
-;
+        position: relative;
+        margin-top: 34px;
+        padding: 0;
+        display: block;
+        width: 100%;
+        height: 175px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .h1 {
@@ -373,6 +375,9 @@ input:required:focus {
 	margin: auto;
 }
 
+
+
+
      
 
 
@@ -385,6 +390,16 @@ input:required:focus {
     }
  
 }
+
+@media(max-width: 575px) {
+    #costofasoftwarebug {
+        position: relative;
+        margin-top: 34px;
+    
+}
+
+}
+
 
 @media(max-width:1067px){
     #flashMessage {
@@ -441,7 +456,7 @@ input:required:focus {
     .main-nav li{
         width: 15%;
         display: inline-block;
-        padding-left: 5px;
+        padding-left: 0px;
       
     }
     li::before
@@ -528,14 +543,16 @@ input:required:focus {
         display: inline-block !important;
     }
     .nav li{
-        width: 10%;
-        display: inline-block;
-        margin-right: 0px;
+        /* width: 9%; */
+        display: inline ;
+        margin-right: 22px;
+        
         
     }
     .nav li:first-of-type{
         margin-left: 50%;
     }
+  
 
 
 
