@@ -402,7 +402,7 @@ input:required:focus {
 }
 
 
-@media(max-width:1067px){
+@media(max-width:1230px){
     #flashMessage {
         margin-top: 46px;
     }
@@ -413,11 +413,13 @@ input:required:focus {
 
 }
 
+
 @media(min-width: 1068px) {
 
 
     .scheduleConsult-heading{
         margin-top: 25px;
+        
 
     }
 
