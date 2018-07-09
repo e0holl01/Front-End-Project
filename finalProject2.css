@@ -34,7 +34,7 @@ small {
 /* ===========Background Color=========== */
 body {
     background-color: floralwhite;
-    width:
+    width:100%;
     }  
 
 
@@ -167,8 +167,7 @@ a:hover {
     
    
 }
-    /*===========Also on Schedule Page=========== */
-
+   
 
 p {
     color: gray;
@@ -177,8 +176,6 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-   
-
     
   
    }
@@ -263,11 +260,9 @@ p {
     font-size: auto;
     margin-top: 45px;
    
-
-    
-
 }
 form {
+
     display: table-cell;
     text-decoration-color: gray;
     color: gray;
@@ -276,10 +271,8 @@ form {
     vertical-align: middle;
     width: 100%;
 	position: center;
-    
-    
+        
 }
-
 
 
 #companyname, #firstname, #lastname, #email, #phonenumber {
@@ -292,22 +285,19 @@ input[type="email"],
 input[type="tel"],
 input[type="radio"]
 textarea {
-  font-size: 1em;
-  color: black;
-  font-weight: 300; 
-  width: 100%;
-  border-style: groove;
-  height: auto;
-  padding: 15px;
-  outline: 0;
-  margin-bottom: 1.2em;
-  border-radius: 1.3em;
-  border-bottom: 3px solid darkgray;
-  background-color: whitesmoke;
-  
-
-
- 
+    font-size: 1em;
+    color: black;
+    font-weight: 300; 
+    width: 100%;
+    border-style: groove;
+    height: auto;
+    padding: 15px;
+    outline: 0;
+    margin-bottom: 1.2em;
+    border-radius: 1.3em;
+    border-bottom: 3px solid darkgray;
+    background-color: whitesmoke;
+   
 }
 
 
@@ -333,23 +323,22 @@ textarea {
     border-radius: 1.3em;
     border-bottom: 3px solid darkgray;
     background-color: whitesmoke;
-
+    
 }
 
 
-
 #submit {
-  cursor: pointer;  
-  font-size: 1em;
-  font-weight: 300;
-  color: grey;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-transform: uppercase;
-  box-shadow:inset 0 1px 0 rgba(0,0,0,0.03) ;
-  margin-bottom: 41px;
-  margin-top: -4px;
-  padding-bottom: 0px;
+    cursor: pointer;  
+    font-size: 1em;
+    font-weight: 300;
+    color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    box-shadow:inset 0 1px 0 rgba(0,0,0,0.03) ;
+    margin-bottom: 41px;
+    margin-top: -4px;
+    padding-bottom: 0px;
   
 }
 
@@ -360,7 +349,6 @@ input:required:focus {
 #flashMessage {
     color:purple;
     background-color: gainsboro;
-    /* padding: 15px; */
     border-radius: 5px;
     display: block;
     width: 100%;
@@ -372,26 +360,89 @@ input:required:focus {
     text-align: center;
 }
 
-/*=========== Attribute Selectors=========== */
 .form-consult {
-    padding: 0px 25px;	
-    margin: 0 auto;
-  
-   
-}
+    padding: 0px 25px;
+    display: contents;
+      
+} 
 
 #container-consult {
 	max-width: 500px;
 	margin: auto;
 }
-
-
-
-
      
 
 
 /*=========== Media Queries=========== */
+
+@media (min-width: 51px) and (max-width: 372px) {
+    .main-header {
+        width:  -webkit-fill-available;
+        }
+
+    .mobileToggle {
+        margin-left: 5px;
+        font-size: small;
+       
+    }
+
+    li a {
+        margin-left: 5px;
+        font-size: small;
+    }
+
+
+    li::before
+     {
+        display: none;
+                
+                } 
+
+    .main-testing,
+    .uat-testing,
+    .performance-testing,
+    #container-consult {
+        margin-top: 5px;
+        word-wrap: break-word;
+        line-break: auto;
+        margin: auto;
+    }
+    .h1 {
+        font-size: large;
+        text-align: center;
+        
+    }    
+
+    .lead 
+        {
+        font-size: small;
+        text-align: left;
+        margin-top: 10px;
+     
+
+    }    
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+
+    #container-consult {
+        font-size: xx-small;
+    }
+
+    .container-fluid {
+        font-size: x-small;
+    }
+
+    #costofasoftwarebug {
+        display: none;
+    }
+
+}
+
 
 @media(max-width: 373px) {
     .scheduleConsult-heading {
@@ -399,6 +450,21 @@ input:required:focus {
 
     }
  
+}
+
+@media(min-width: 374px) {
+    .scheduleConsult-heading {
+        margin-top: 15px;
+
+    }
+	
+	
+	form:focus-within {
+	
+	box-shadow: 0px 0.2em 2.5em #c4c4c4;
+	transform: scale(1.025); 
+}
+
 }
 
 @media(max-width: 575px) {
@@ -415,10 +481,10 @@ input:required:focus {
     #flashMessage {
         margin-top: 46px;
     }
-    .scheduleConsult-heading {
+    /* .scheduleConsult-heading {
         margin-top: 30px;
 
-    }
+    } */
 
 }
 
@@ -513,6 +579,7 @@ input:required:focus {
     
       
     } 
+}
 
    
 
@@ -569,24 +636,13 @@ input:required:focus {
         width: 9%;
         display: inline ;
         margin-right: 15px;
+        fon
         
-        
-    }
-    .nav li:first-of-type{
-        margin-left: 50%;
-    }
-  
+            }
 
 
 
-    /* .nav {
-       
-        display: inline-block;
-        position: relative;
-        margin: 0 auto;
-        top: 10px;
-        width: 100%;
-    } */
+
 }
 
 }
@@ -643,7 +699,7 @@ footer {
     }
 
     #flashMessage {
-        margin-top: 1px;
+        margin-top: 0;
 
     }
 
@@ -662,20 +718,10 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
         text-align: justify;
+        }
 
 
     header {
-width: 130%;
-
-
+    width: 130%;
 
 }
-
-    }
-    }
-
-    }
-
-  
-
-   
