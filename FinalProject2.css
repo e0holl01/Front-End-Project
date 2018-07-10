@@ -162,8 +162,7 @@ a:hover {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
-    
-   
+       
 }
    
 
@@ -217,8 +216,6 @@ p {
     margin: 0 auto;
     width: 100%
 }
-
-
 
 
 .endtest {
@@ -346,9 +343,6 @@ textarea {
 }
 
 
-
-
-
 input:required:focus {
     border:1px solid tomato;
 }
@@ -383,6 +377,7 @@ input:required:focus {
     display: inline-block;
 }
 }
+
 
 @media (min-width: 51px) and (max-width: 372px) {
     .main-header {
