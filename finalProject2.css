@@ -6,7 +6,6 @@ header{
    
    }
 
-}
 
 footer, {
 
@@ -70,8 +69,8 @@ div.main-nav{
     color:gainsboro;
     width: 100%;
      
-
 }
+
 .main-nav li{
     list-style: none;
     width: 100%;
@@ -91,9 +90,8 @@ li::before
     border-radius: 50%;
     background: gainsboro;
     margin: 0 20px; 
-   
-            
-           }  
+           
+    }  
 
 
 .nav {
@@ -108,8 +106,6 @@ li::before
     background-color: black;
     box-sizing: unset;
    
-    
-
 }
 
 /*=========== Nav Link Styles=========== */
@@ -178,11 +174,8 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-    
   
    }
-
-
 
    .uat-page {
     color: gray;
@@ -277,6 +270,19 @@ form {
 }
 
 
+.form-consult {
+    padding: 0px 25px;
+    display: contents;
+      
+} 
+
+	form:focus-within {
+	
+	box-shadow: 0px 0.2em 2.5em #c4c4c4;
+	transform: scale(1.025);
+}
+
+
 #companyname, #firstname, #lastname, #email, #phonenumber {
     text-transform: uppercase;
 }
@@ -303,11 +309,6 @@ textarea {
 }
 
 
-input[type=text]:focus,
-input[type=email]:focus {
-	
-    transition: ease-in-out, width .35s ease-in-out;
-}
 
 label {
   display:block;
@@ -344,6 +345,10 @@ textarea {
   
 }
 
+
+
+
+
 input:required:focus {
     border:1px solid tomato;
 }
@@ -362,11 +367,7 @@ input:required:focus {
     text-align: center;
 }
 
-.form-consult {
-    padding: 0px 25px;
-    display: contents;
-      
-} 
+
 
 #container-consult {
 	max-width: 500px;
@@ -462,20 +463,7 @@ input:required:focus {
  
 }
 
-@media(min-width: 374px) {
-    .scheduleConsult-heading {
-        margin-top: 15px;
 
-    }
-	
-	
-	form:focus-within {
-	
-	box-shadow: 0px 0.2em 2.5em #c4c4c4;
-	transform: scale(1.025); 
-}
-
-}
 
 @media(max-width: 575px) {
     #costofasoftwarebug {
@@ -516,14 +504,8 @@ input:required:focus {
 
     }
 	
-	
-	form:focus-within {
-	
-	box-shadow: 0px 0.2em 2.5em #c4c4c4;
-	transform: scale(1.025); 
-}
 
-}
+    
 
 @media(min-width: 700px){
     .mobileToggle{
