@@ -1,4 +1,7 @@
 
+// Jquery
+
+
 $(function(){
     $('#flashMessage').hide();
 
@@ -21,11 +24,25 @@ $(function(){
 
 })
 
+
+// Javascrip
+
 function showMessage() {
     var form = $("form")[0]
-    if(form.checkValidity()) {
+    if(form.checkValidity()) 
+        {
         $('#flashMessage').slideDown(900).delay(3000).slideUp(900);
+        setTimeout(function() {
+        const inputBoxes = document.getElementsByClassName('inputBoxes');
+                for (var i=0; i<inputBoxes.length; i+=1) {
+                    inputBoxes[i].value = "";
+                }
+
+         }, 4000);
     }
+
+
+    // This script is to run after the flash message and resets the form
 }
 
-// need to reset form when submitted. message still needs to show
+
