@@ -42,10 +42,28 @@ body {
     float: left;
     position: relative;
     left: 6px;  
-    display: none;
     z-index: 1;
     top: 58px;
+    display: inline-block;
+    position: relative;
+    font-size: larger;
+    font-weight: 100;
+    margin-right: auto;
 }
+
+
+.title::before,
+.title::after {
+    content: "";            /*   ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin-left: 10px;
+    margin-right: 10px;
+            
+    }   
 
 
 .mobileToggle {   /*=========== Named Menu =========== */
@@ -73,14 +91,15 @@ div.main-nav{
      
 }
 
-.main-nav li{
-    list-style: none;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin-left: 15px;
-    box-sizing: unset;
-    
+ .main-nav li { 
+    width: 15px;
+    display: inline;
+    padding-left: 6px;
+    margin-left: 10px;
+    font-size: larger;
+}
+
+
 }
 
 li::before
@@ -371,37 +390,7 @@ input:required:focus {
 	max-width: 500px;
 	margin: auto;
 }
-
-
-
-
-  
-  /* ===========Title=========== */
-  .title {
-    color: gainsboro;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: inline-block;
-    position: relative;
-    left: 6px;
-    font-size: 20px;
-    font-weight: 100;
-    z-index: 1;
-    top: 1;
-    margin-right: auto;
-     
-    }
-
- .title::before,
-.title::after {
-    content: "";            /*   ==========Pseudo-element for Title =========== */
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: gainsboro;
-    margin: 0 20px; 
-            
-            }      
+ 
 
 
     form {
@@ -608,12 +597,7 @@ main {
     }
       
 
-    .main-nav li{
-        width: 11%;
-        display: inline-block;
-        padding-left: 0px;
-      
-    }
+
     li::before
      {
         content: "";                /* ==========Pseudo-element for Title =========== */
@@ -636,46 +620,20 @@ main {
     } 
 }
 
-   
-
-
-  
-  /* ===========Title=========== 
-  .title {
-    color: gainsboro;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: inline-block;
-    position: relative;
-    left: 6px;
-    font-size: 20px;
-    font-weight: 100;
-    z-index: 1;
-    top: 1;
-    margin-right: auto;
-     
+@media(max-width: 738px){
+    .title {
+        font-size: large;
     }
 
-.title::before,
-.title::after {
-    content: "";                /* ==========Pseudo-element for Title =========== */
-    /* display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: gainsboro;
-    margin: 0 20px; 
-            
-            }      
+    .main-nav li {
+
+        font-size: large;
+    }
+
+}
 
 
-    form {
-        text-decoration-color: gray;
-        color: gray;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
-        margin: 0 auto;
-        max-width: 500px;  
-  } */ */
+
 
 
 
@@ -740,7 +698,20 @@ main {
         text-align: left;
         padding-left: 0px;
         margin-left: 0px;
+        width: 100%;
+        display: inline-block;
+        font-size: x-large;
+    }
 
+
+    li::before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: gainsboro;
+        margin: 0 20px;
     }
 
 
