@@ -61,6 +61,7 @@ body {
 
 .smallScreenAlert {
     display: none;
+    text-align: center;
 
 }
 
@@ -368,11 +369,73 @@ input:required:focus {
 	max-width: 500px;
 	margin: auto;
 }
+
+
+
+
+  
+  /* ===========Title=========== */
+  .title {
+    color: gainsboro;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 6px;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 1;
+    top: 1;
+    margin-right: auto;
      
+    }
+
+ .title::before,
+.title::after {
+    content: "";            /*   ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gainsboro;
+    margin: 0 20px; 
+            
+            }      
+
+
+    form {
+        text-decoration-color: gray;
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+        margin: 0 auto;
+        max-width: 500px;  
+  }
+
+
+footer {
+    position: fixed;
+    display: inline;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    
+       
+}
+.contact-footer {
+
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: yellow;
+        text-align: left;
+    }
 
 
 /*=========== Media Queries=========== */
-@media(max-width: 133px) {
+@media(max-width: 319px) {
 
 .smallScreenAlert {
     display: inline-block;
@@ -394,6 +457,12 @@ main {
 }
 }
 
+@media (max-width:414px){
+
+#costofasoftwarebug {
+    display: none;
+}
+}
 
 @media (min-width: 51px) and (max-width: 372px) {
     .main-header {
@@ -457,11 +526,7 @@ main {
         font-size: x-small;
     }
 
-    #costofasoftwarebug {
-        display: none;
-    }
-
- 
+  
 
 }
 
@@ -480,6 +545,7 @@ main {
     #costofasoftwarebug {
         position: relative;
         margin-top: 15px;
+        margin: auto;
     
 }
 
@@ -490,10 +556,6 @@ main {
     #flashMessage {
         margin-top: 46px;
     }
-    /* .scheduleConsult-heading {
-        margin-top: 30px;
-
-    } */
 
 }
 
@@ -514,6 +576,7 @@ main {
         margin-top: 15px;
 
     }
+}
 	
 
     
@@ -588,7 +651,7 @@ main {
 
 
   
-  /* ===========Title=========== */ 
+  /* ===========Title=========== 
   .title {
     color: gainsboro;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -606,7 +669,7 @@ main {
 .title::before,
 .title::after {
     content: "";                /* ==========Pseudo-element for Title =========== */
-    display: inline-block;
+    /* display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -623,7 +686,7 @@ main {
   
         margin: 0 auto;
         max-width: 500px;  
-  }
+  } */ */
 
 
 
@@ -648,9 +711,9 @@ main {
 
 }
 
-}
 
-footer {
+
+/* footer {
     position: fixed;
     display: inline;
     left: 0;
@@ -668,7 +731,7 @@ footer {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: yellow;
         text-align: left;
-    }
+    } */
 
     
 
@@ -727,4 +790,5 @@ footer {
     header {
     width: 130%;
 
+}
 }
