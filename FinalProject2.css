@@ -61,6 +61,7 @@ body {
 
 .smallScreenAlert {
     display: none;
+
 }
 
 div.main-nav{
@@ -375,6 +376,21 @@ input:required:focus {
 
 .smallScreenAlert {
     display: inline-block;
+}
+.main-header {
+    display: none;
+}
+
+h1 {
+    display: none;
+}
+
+main {
+    display: none;
+}
+
+#container-consult {
+    display: none;
 }
 }
 
