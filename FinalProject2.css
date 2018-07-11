@@ -692,7 +692,10 @@ main {
         display: none;
         left: 6px;
     }
+    .mobileToggle {
+        font-size: large;
 
+    }
 
     .main-nav li {
         text-align: left;
