@@ -56,7 +56,7 @@ body {
     right: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-left: 1%;
+    margin-left: 30px;
 }
 
 .smallScreenAlert {
@@ -98,16 +98,15 @@ li::before
 
 .nav {
    
-    width: 100%;
-    background: black;  
+    width: -webkit-fill-available;
     position: relative;
     text-align: right;
-    top: 4px;
+    top: 5px;
     margin: 10px;
-    padding: 10px;
-    background-color: black;
+    padding: 5px;
     box-sizing: unset;
-   
+    display: inline-block;
+ 
 }
 
 /*=========== Nav Link Styles=========== */
@@ -144,6 +143,7 @@ a:hover {
 .main-testing {
     margin-top: 0px;
     margin-left: -15px;
+
    
     
 }
@@ -164,6 +164,8 @@ a:hover {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
+    text-align: center;
+
        
 }
    
@@ -487,7 +489,7 @@ main {
                 
                 } 
 
-    .main-testing,
+    /* .main-testing,
     .uat-testing,
     .performance-testing,
     #container-consult {
@@ -495,7 +497,7 @@ main {
         word-wrap: break-word;
         line-break: auto;
         margin: auto;
-    }
+    } */
     .h1 {
         font-size: large;
         text-align: center;
@@ -624,26 +626,13 @@ main {
         display: none;
                 
                 }  
-    .nav {
-        
-        display: inline-block;
-        position: relative;
-        margin-top: 0px;
-        margin-left: -10px;
-        top: 10px;
-        width: -webkit-fill-available;
-             
-    }
-
-
 
     footer {
         
-        display: none;
+        display: nline;
         width: 100%;
        
-    
-      
+        
     } 
 }
 
