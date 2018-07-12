@@ -393,8 +393,8 @@ input:required:focus {
 /*=========== Media Queries=========== */
 
 
-/* 
-@media (min-width: 51px) and (max-width: 372px) {
+
+@media (min-width: 51px) and (max-width: 319px) {
     .main-header {
         width:  -webkit-fill-available;
         }
@@ -449,21 +449,23 @@ input:required:focus {
     
 
     #container-consult {
-        font-size: xx-small;
+        font-size: small;
     }
 
     .container-fluid {
         font-size: x-small;
     }
 
-    #costofasoftwarebug {
-        display: none;
-    }
+
 
  
 
-} */
+}
 
+@media(max-width:420px) {
+
+
+}
 
 @media(max-width: 373px) {
     .scheduleConsult-heading {
@@ -475,12 +477,10 @@ input:required:focus {
 
 
 
-@media(max-width: 575px) {
+@media(max-width: 600px) {
     #costofasoftwarebug {
-        position: relative;
-        margin-top: 15px;
-    
-}
+        display: none;
+    }
 
 }
 
