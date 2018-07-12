@@ -305,6 +305,11 @@ textarea {
    
 }
 
+textarea {
+
+    padding: 10px;
+}
+
 
 
 label {
@@ -717,3 +722,5 @@ footer {
 
 /* text area padding
 img shrink by resolution */
+/* 
+html mail to  */
