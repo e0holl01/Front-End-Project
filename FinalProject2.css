@@ -12,7 +12,6 @@ footer, {
     bottom: 0;
     width: 100%;
     background-color: black;
-    /* color: #edc7b7; */
     text-align: left;
     display: none;
 }
@@ -24,6 +23,7 @@ small {
     margin-right: 10px;
     padding-top: 0;
     color: #edc7b7;
+    
   
 }
 
@@ -36,15 +36,31 @@ body {
 
 /* ===========Title - QA by Erica =========== */
 .title {
-    color: #eee2dc;
+  
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    float: left;
-    position: relative;
-    left: 6px;  
-    display: none;
+    color: #edc7b7;  
+    display: inline-block;
     z-index: 1;
     top: 58px;
+    left: 6px;
+    font-size: 20px;
+    font-weight: 100;
+    position: relative;
+    top: 1;
+    margin-right: auto;
 }
+
+.title::before,
+.title::after {
+    content: "";                /* ==========Pseudo-element for Title =========== */
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #edc7b7;
+    margin: 0 20px; 
+            
+            } 
 
 
 .mobileToggle {   /*=========== Named Menu =========== */
@@ -56,11 +72,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 1%;
+    
 }
 
-.smallScreenAlert {
-    display: none;
-}
 
 div.main-nav{
     display: none;
@@ -255,15 +269,15 @@ p {
 form {
 
     display: table-cell;
-    /* text-decoration-color: #123c69; */
-    /* color: #123c69; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 50%;
     vertical-align: middle;
     width: 100%;
-	position: center;
+    position: center;
+    color: #123c69;
         
 }
+
 
 
 .form-consult {
@@ -272,10 +286,10 @@ form {
       
 } 
 
-	form:focus-within {
+	.form-consult:focus-within {
 	
-	box-shadow: 0px 0.2em 2.5em #c4c4c4;
-	transform: scale(1.025);
+        box-shadow: 0px 0.2em 2.5em #c4c4c4;
+        transform: scale(1.025); 
 }
 
 
@@ -377,14 +391,9 @@ input:required:focus {
 
 
 /*=========== Media Queries=========== */
-@media(max-width: 133px) {
-
-.smallScreenAlert {
-    display: inline-block;
-}
-}
 
 
+/* 
 @media (min-width: 51px) and (max-width: 372px) {
     .main-header {
         width:  -webkit-fill-available;
@@ -453,7 +462,7 @@ input:required:focus {
 
  
 
-}
+} */
 
 
 @media(max-width: 373px) {
@@ -566,51 +575,31 @@ input:required:focus {
 
 
     footer {
-        
-        width: 100%;
+    
+    width: 100%;
+    position: fixed;
+    display: inline;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
             
     } 
-}
-
-   
 
 
-  
-  /* ===========Title=========== */ 
-  .title {
-    color: #edc7b7;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: inline-block;
-    position: relative;
-    left: 6px;
-    font-size: 20px;
-    font-weight: 100;
-    z-index: 1;
-    top: 1;
-    margin-right: auto;
-     
-    }
-
-.title::before,
-.title::after {
-    content: "";                /* ==========Pseudo-element for Title =========== */
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #edc7b7;
-    margin: 0 20px; 
-            
-            }      
 
 
-    form {
-        color: #123c69;;
+    .contact-footer {
+
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 15px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin: 0 auto;
-        max-width: 500px;  
-  }
-
+        color: #f8e981;
+        text-align: left;
+        background: black;
+    }
+}
 
 
 
@@ -635,26 +624,6 @@ input:required:focus {
 
 
 
-footer {
-    position: fixed;
-    display: inline;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    
-       
-}
-.contact-footer {
-
-        margin-top: 3px;
-        margin-bottom: 3px;
-        margin-left: 15px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: #f8e981;
-        text-align: left;
-        background: black;
-    }
 
     
 
@@ -707,6 +676,7 @@ footer {
     header {
     width: 130%;
 
+}
 }
 
 
