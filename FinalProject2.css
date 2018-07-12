@@ -120,7 +120,7 @@ a {
     }
 
 a:hover {
-    color: #f8e981;
+    color: #ac3b61;
 
     
 }
@@ -158,7 +158,7 @@ a:hover {
 }
 
 .h1 {
-    color: gray;
+    color: #123c69;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
        
@@ -166,7 +166,7 @@ a:hover {
    
 
 p {
-    color: gray;
+    color: #123c69;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5em;
     margin-left: 5%;
@@ -176,36 +176,36 @@ p {
    }
 
    .uat-page {
-    color: gray;
+    color: #123c69;
     font-weight: bold;
     text-decoration:underline;     
 }
 
 .uat-page:visited{
-    color: gray
+    color: #ac3b61;
 
 }   
 
 
 .performance-page {
-    color: gray;
+    color: #123c69;
     font-weight: bold;
     text-decoration:underline;     
 }
 
 .performance-page:visited{
-    color: gray
+    color: #ac3b61;
 
 }   
 
 .consult-page {
-    color: gray;
+    color: #123c69;
     font-weight: bold;
     text-decoration:underline;     
 }
 
 .consult-page:visited{
-    color: gray 
+    color: #ac3b61; 
 
 }   
 
@@ -218,13 +218,13 @@ p {
 
 
 .endtest {
-    color: gray;
+    color: #123c69;
     font-weight: bold;
     text-decoration:underline;     
 }
 
 .endtest:visited{
-    color: gray
+    color: #ac3b61;
 
 }
 
@@ -236,13 +236,13 @@ p {
 }
 
 .blazemeter {
-    color: gray;
+    color: #123c69;
     font-weight: bold;
     text-decoration:underline;     
 }
 
 .blazemeter:visited{
-    color: gray
+    color: #ac3b61;
 
 }
 
@@ -255,8 +255,8 @@ p {
 form {
 
     display: table-cell;
-    text-decoration-color: gray;
-    color: gray;
+    /* text-decoration-color: #123c69; */
+    /* color: #123c69; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 50%;
     vertical-align: middle;
@@ -314,6 +314,7 @@ textarea {
 label {
   display:block;
   margin-bottom: 0.5em;
+  color: #123c69;
    
 }
 
@@ -335,7 +336,7 @@ textarea {
     cursor: pointer;  
     font-size: 1em;
     font-weight: 300;
-    color: grey;
+    color: #ac3b61;
     padding-left: 20px;
     padding-right: 20px;
     text-transform: uppercase;
