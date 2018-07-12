@@ -348,6 +348,7 @@ textarea {
 }
 
 
+
 input:required:focus {
     border:1px solid tomato;
 }
@@ -604,10 +605,8 @@ input:required:focus {
 
 
     form {
-        text-decoration-color: gray;
-        color: gray;
+        color: #123c69;;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
         margin: 0 auto;
         max-width: 500px;  
   }
@@ -696,7 +695,7 @@ footer {
 
 
     p {
-        color: gray;
+        color: #123c69;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 1.5em;
         margin-left: 5%;
