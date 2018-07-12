@@ -1,5 +1,4 @@
-  
-   /* ===========Mobile First Approach=========== */ 
+
 header{
     background-color: black;
     width: 100%;
@@ -13,7 +12,7 @@ footer, {
     bottom: 0;
     width: 100%;
     background-color: black;
-    color: gainsboro;
+    /* color: #edc7b7; */
     text-align: left;
     display: none;
 }
@@ -24,20 +23,20 @@ small {
     margin-top: -23px;
     margin-right: 10px;
     padding-top: 0;
-    color: gainsboro;
+    color: #edc7b7;
   
 }
 
 /* ===========Background Color=========== */
 body {
-    background-color: floralwhite;
+    background-color: #eee2dc;
     width:100%;
     }  
 
 
 /* ===========Title - QA by Erica =========== */
 .title {
-    color: gainsboro;
+    color: #eee2dc;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     float: left;
     position: relative;
@@ -50,7 +49,7 @@ body {
 
 .mobileToggle {   /*=========== Named Menu =========== */
     background-color: black;
-    color: yellow;
+    color: #f8e981;
     position: relative;
     top: 0px;
     right: 0;
@@ -66,7 +65,7 @@ body {
 div.main-nav{
     display: none;
     text-decoration: none;
-    color:gainsboro;
+    /* color:gainsboro; */
     width: 100%;
      
 }
@@ -88,7 +87,7 @@ li::before
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: gainsboro;
+    background: #edc7b7;
     margin: 0 20px; 
            
     }  
@@ -110,7 +109,7 @@ li::before
 
 /*=========== Nav Link Styles=========== */
 li a {
-    color: gainsboro;
+    color: #edc7b7;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
  }  
@@ -121,19 +120,19 @@ a {
     }
 
 a:hover {
-    color: yellow;
+    color: #f8e981;
 
     
 }
 
 
 .linkedin {
-    color: yellow;
+    color: #f8e981;
     font-weight: bold;
       
 }
 .linkedin:visited{
-    color: yellow;
+    color: #f8e981;
 
 }   
 
@@ -503,6 +502,7 @@ input:required:focus {
         margin-top: 15px;
 
     }
+}
 	
 
     
@@ -545,7 +545,7 @@ input:required:focus {
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        background: gainsboro;
+        background: #edc7b7;
         margin: 0 20px; 
         display: none;
                 
@@ -565,11 +565,8 @@ input:required:focus {
 
     footer {
         
-       
         width: 100%;
-       
-    
-      
+            
     } 
 }
 
@@ -579,7 +576,7 @@ input:required:focus {
   
   /* ===========Title=========== */ 
   .title {
-    color: gainsboro;
+    color: #edc7b7;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: inline-block;
     position: relative;
@@ -599,7 +596,7 @@ input:required:focus {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: gainsboro;
+    background: #edc7b7;
     margin: 0 20px; 
             
             }      
@@ -636,7 +633,7 @@ input:required:focus {
 
 }
 
-}
+
 
 footer {
     position: fixed;
@@ -654,23 +651,18 @@ footer {
         margin-bottom: 3px;
         margin-left: 15px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: yellow;
+        color: #f8e981;
         text-align: left;
+        background: black;
     }
 
     
 
 @media(max-width: 699px){
     .title {
-        color: gainsboro;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        float: left;
-        top: 35px;
-        position: relative;
         display: none;
-        left: 6px;
+      
     }
-
 
     .main-nav li {
         text-align: left;
@@ -720,7 +712,7 @@ footer {
 
 
 
-/* text area padding
-img shrink by resolution */
+
+/* img shrink by resolution */ 
 /* 
 html mail to  */
