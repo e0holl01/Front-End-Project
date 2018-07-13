@@ -1,9 +1,16 @@
 
 header{
-    background-color: black;
-    /* width: 100%; */
-   width: fit-content;
-   }
+    
+     background-color: black;
+     widows: 100%;;
+   
+
+   } 
+
+   .main-header {
+    width:  100%;
+
+    }
 
 
 footer, {
@@ -30,14 +37,13 @@ small {
 /* ===========Background Color=========== */
 body {
     background-color: #eee2dc;
-    /* width:100%;
-    width: inherit; */
+    width:100%;
+    
     }  
 
 
 /* ===========Title - QA by Erica =========== */
 .title {
-  
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #edc7b7;  
     /* display: inline-block; */
@@ -72,15 +78,15 @@ body {
         
     }
 
-.mobileToggle {   /*=========== Named Menu =========== */
-    background-color: black;
+.mobileToggle {   /*===========Mobile Menu =========== */
+    
     color: #f8e981;
     position: relative;
     top: 0px;
     right: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-left: 1%;
+    margin-left: 5px;
     
 }
 
@@ -405,13 +411,10 @@ input:required:focus {
 
 
 
-@media (min-width: 51px) and (max-width: 319px) {
-    .main-header {
-        width:  -webkit-fill-available;
-        }
+@media(max-width: 319px) {
+
 
     .mobileToggle {
-        margin-left: 5px;
         font-size: small;
        
     }
@@ -471,7 +474,9 @@ input:required:focus {
 
  
 
-}
+} 
+
+
 
 @media(max-width:420px) {
 
@@ -686,6 +691,5 @@ input:required:focus {
 
 
 
-/* img shrink by resolution */ 
-/* 
-html mail to  */
+
+/* html mail to  */
