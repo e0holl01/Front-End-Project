@@ -1,8 +1,8 @@
-
+/*------------------------ Mobile First Approach------------------------- */
 header{
     
      background-color: black;
-     widows: 100%;;
+     width: 100%;;
    
 
    } 
@@ -20,6 +20,14 @@ footer, {
     width: 100%;
     background-color: black;
     text-align: left;
+    display: none;
+}
+
+.contact-footer {
+    display: none;
+}
+
+.copyright {
     display: none;
 }
 
@@ -89,7 +97,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 5px;
+    font-size: medium;
     
+}
+
+.nav {
+   
+    width: 100%;
+    background: black;  
+    position: relative;
+    text-align: right;
+    top: 0px;
+    margin-top: 0px;
+    margin-left: 15px;
+    padding: 0px;
+    background-color: black;
+    box-sizing: unset;
+    font-size: small;
+   
 }
 
 
@@ -104,38 +129,28 @@ div.main-nav{
     list-style: none;
     width: 100%;
     display: inline-block;
-    text-align: center;
-    margin-left: 15px;
+    text-align: left;
+    margin-left: 0px;
     box-sizing: unset;
+    padding-left: 0;
+
     
 }
- /* ==========Pseudo-element for Title =========== */
+
+ /* ==========Pseudo-element for Nav Items =========== */
 li::before
  {
-    content: "";               
+    display: none;
+    /* content: "";               
     display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #edc7b7;
-    margin: 0 20px; 
+    margin: 0 20px;  */
            
     }  
 
-
-.nav {
-   
-    width: 100%;
-    background: black;  
-    position: relative;
-    text-align: right;
-    top: 4px;
-    margin: 10px;
-    padding: 10px;
-    background-color: black;
-    box-sizing: unset;
-   
-}
 
 /*=========== Nav Link Styles=========== */
 li a {
@@ -232,6 +247,7 @@ a:hover {
     margin: 0;
 }
 
+
    .uat-page {
     color: #123c69;
     font-weight: bold;
@@ -304,9 +320,13 @@ a:hover {
 }
 
 /*=========== Schedule a Consultation page=========== */
+
 .scheduleConsult-heading {
+    display: none;
+
+/* .scheduleConsult-heading {
     font-size: auto;
-    margin-top: 45px;
+    margin-top: 45px; */
    
 }
 form {
@@ -361,12 +381,6 @@ textarea {
    
 }
 
-textarea {
-
-    padding: 10px;
-}
-
-
 
 label {
   display:block;
@@ -385,6 +399,7 @@ textarea {
     border-radius: 1.3em;
     border-bottom: 3px solid darkgray;
     background-color: whitesmoke;
+    padding: 10px;
     
 }
 
@@ -411,15 +426,14 @@ input:required:focus {
 }
 
 #flashMessage {
-    color:purple;
+    color:red;
     border-radius: 20px;
-    border-color: purple;
+    border-color: red;
     border-style: double;
     border-width: medium;
     display: block;
     width: 100%;
-    margin-top: 23px;
-    margin-bottom: -16px;
+    margin-top: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
     font-weight: bold;
@@ -438,58 +452,21 @@ input:required:focus {
 
 /*=========== Media Queries=========== */
 
-@media(min-width:50px)and (max-width:318px) {
- 
-   
-
-    .lead {
-        /* font-size:small ;
-        line-height: 20px;
-        text-align: left;
-        margin: 0; */
-   
-    }
-
-  
-
-
-th,
-td {
-    font-weight: 500;
-}
-}
-
-li:before {
-    display: none;
-}
-
-.main-nav li {
-    margin-left: 0;
-}
-
-}
-
-
 @media(min-width:319px) {
 
 
-    .mobileToggle {
-        font-size: medium;
-       
-    }
-
-    li a {
+   /* li a {
      
         margin-left: 5px;
         font-size: 14px;
-    }
+    } */
 
 
-    li::before
+    /* li::before
     {
         display: none;
               
-       }  
+       }   */
 
     
     .uat-testing,
@@ -538,28 +515,10 @@ li:before {
 
 
 
-@media(max-width: 373px) {
-    .scheduleConsult-heading {
-        display: none;
 
-    }
+
+@media(min-width:1230px){
  
-}
-
-
-
-@media(max-width: 600px) {
-    #costofasoftwarebug {
-        display: none;
-    }
-
-}
-
-
-@media(max-width:1230px){
-    #flashMessage {
-        margin-top: 46px;
-    }
     /* .scheduleConsult-heading {
         margin-top: 30px;
 
@@ -620,11 +579,11 @@ li:before {
         padding-left: 0px;
       
     }
-    li::before
+    /* li::before
      {
         display: none;
                 
-                }  
+                }   */
     .nav {
         
         display: inline-block;
@@ -686,61 +645,6 @@ li:before {
 
 
 }
-
-
-
-
-    
-
-@media(max-width: 699px){
-
-    .main-nav li {
-        text-align: left;
-        padding-left: 0px;
-        margin-left: 0px;
- 
-    }
-   
-
-    .nav {
-        margin-top: 0px;
-        padding: 0px;
-        width: 100%;
-        
-
-    }
-
-    #flashMessage {
-        margin-top: 0;
-
-    }
-
-    footer {
-     
-        display: none;
-
-    
-    }
-
-
-    /* p {
-        color: #123c69;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        line-height: 1.5em;
-        margin-left: 5%;
-        margin-right: 5%;
-        text-align: justify;
-        } */
-
-
-    header {
-    width: 130%;
-
-}
-}
-
-
-
 
 
 
