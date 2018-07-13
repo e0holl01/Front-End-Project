@@ -63,6 +63,13 @@ body {
             } 
 
 
+    h2,
+    th, 
+    td {
+        color: #ac3b61;
+        
+    }
+
 .mobileToggle {   /*=========== Named Menu =========== */
     background-color: black;
     color: #f8e981;
