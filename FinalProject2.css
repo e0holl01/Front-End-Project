@@ -1,8 +1,8 @@
 
 header{
     background-color: black;
-    width: 100%;
-   
+    /* width: 100%; */
+   width: fit-content;
    }
 
 
@@ -30,7 +30,8 @@ small {
 /* ===========Background Color=========== */
 body {
     background-color: #eee2dc;
-    width:100%;
+    /* width:100%;
+    width: inherit; */
     }  
 
 
@@ -39,7 +40,7 @@ body {
   
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #edc7b7;  
-    display: inline-block;
+    /* display: inline-block; */
     z-index: 1;
     top: 58px;
     left: 6px;
@@ -48,6 +49,7 @@ body {
     position: relative;
     top: 1;
     margin-right: auto;
+    display: none;
 }
 
 .title::before,
@@ -86,7 +88,6 @@ body {
 div.main-nav{
     display: none;
     text-decoration: none;
-    /* color:gainsboro; */
     width: 100%;
      
 }
@@ -100,10 +101,10 @@ div.main-nav{
     box-sizing: unset;
     
 }
-
+ /* ==========Pseudo-element for Title =========== */
 li::before
  {
-    content: "";                /* ==========Pseudo-element for Title =========== */
+    content: "";               
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -376,8 +377,10 @@ input:required:focus {
 
 #flashMessage {
     color:purple;
-    background-color: gainsboro;
-    border-radius: 5px;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: double;
+    border-width: medium;
     display: block;
     width: 100%;
     margin-top: 23px;
@@ -386,6 +389,7 @@ input:required:focus {
     line-height: 1em;
     font-weight: bold;
     text-align: center;
+    
 }
 
 
@@ -419,10 +423,10 @@ input:required:focus {
 
 
     li::before
-     {
+    {
         display: none;
-                
-                } 
+              
+       }  
 
     .main-testing,
     .uat-testing,
@@ -558,13 +562,6 @@ input:required:focus {
     }
     li::before
      {
-        content: "";                /* ==========Pseudo-element for Title =========== */
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #edc7b7;
-        margin: 0 20px; 
         display: none;
                 
                 }  
@@ -577,6 +574,11 @@ input:required:focus {
         top: 10px;
         width: -webkit-fill-available;
              
+    }
+
+    .title {
+
+        display: inline-block;
     }
 
 
@@ -611,9 +613,7 @@ input:required:focus {
 
 
 @media(min-width: 1231px){
-    .mobileToggle{
-        display: none;
-    }
+
     .main-nav{
         display: inline-block !important;
     }
@@ -635,10 +635,6 @@ input:required:focus {
     
 
 @media(max-width: 699px){
-    .title {
-        display: none;
-      
-    }
 
     .main-nav li {
         text-align: left;
