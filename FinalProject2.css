@@ -110,7 +110,7 @@ body {
     top: 0px;
     margin-top: 0px;
     margin-left: 15px;
-    padding: 0px;
+    padding-top: 5px;
     background-color: black;
     box-sizing: unset;
     font-size: small;
@@ -141,13 +141,12 @@ div.main-nav{
 li::before
  {
     display: none;
-    /* content: "";               
-    display: inline-block;
-    width: 12px;
-    height: 12px;
+    content: "";              
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: #edc7b7;
-    margin: 0 20px;  */
+    margin-right: 5px;
            
     }  
 
@@ -454,19 +453,44 @@ input:required:focus {
 
 @media(min-width:319px) {
 
+    .col-sm-5 {
+        display: table;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-   /* li a {
+    h2 {
+        font-size: medium;
+        padding-top: 10px;
+    }
+    th {
+        font-weight: 400;
+    }
+
+    tr {
+        font-weight: bold;
+        padding-bottom: 20px;
+        
+    }
+
+    table {
+        border-bottom: 1pt solid #ac3b61;
+        
+
+    }
+
+
+   li a {
      
         margin-left: 5px;
         font-size: 14px;
-    } */
+    } 
 
 
-    /* li::before
+     li::before
     {
-        display: none;
+        display: inline-block;
               
-       }   */
+       } 
 
     
     .uat-testing,
@@ -477,12 +501,12 @@ input:required:focus {
         line-break: auto;
         margin: auto;
     }
-    /* .h1 {
-        font-size: large;
+   .h1 {
+        font-size: medium;
         text-align: center;
         
     }    
-
+  /*
     .lead 
         {
         font-size: small;
