@@ -34,11 +34,10 @@ small {
   
 }
 
-/* ===========Background Color=========== */
 body {
     background-color: #eee2dc;
     width:100%;
-    
+    font-size: small;
     }  
 
 
@@ -46,7 +45,6 @@ body {
 .title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #edc7b7;  
-    /* display: inline-block; */
     z-index: 1;
     top: 58px;
     left: 6px;
@@ -409,19 +407,67 @@ input:required:focus {
 
 /*=========== Media Queries=========== */
 
+@media(min-width:50px)and (max-width:318px) {
+    body {
+        width: fit-content;
+    }
+ 
+    h2 {
+        font-size: small;
+    }
+    .h1 {
+        font-size: small;
+     padding-left: 0;
+     padding-right: 0;
+     margin-left: 0;
+     margin-right: 0;
+     font-weight: bold
+    }
+    .lead {
+        font-size:small ;
+        line-height: 20px;
+        text-align: left;
+        margin: 0;
+   
+    }
+
+    .col-sm-7 {
+        padding: 0;
+    }
+    .table {
+        font-size: 12px;
+        
+    }
+
+th,
+td {
+    font-weight: 500;
+}
+}
+
+li:before {
+    display: none;
+}
+
+.main-nav li {
+    margin-left: 0;
+}
+
+}
 
 
-@media(max-width: 319px) {
+@media(min-width:319px) {
 
 
     .mobileToggle {
-        font-size: small;
+        font-size: medium;
        
     }
 
     li a {
+     
         margin-left: 5px;
-        font-size: small;
+        font-size: 14px;
     }
 
 
@@ -440,7 +486,7 @@ input:required:focus {
         line-break: auto;
         margin: auto;
     }
-    .h1 {
+    /* .h1 {
         font-size: large;
         text-align: center;
         
@@ -453,7 +499,7 @@ input:required:focus {
         margin-top: 10px;
      
 
-    }    
+    }     */
 
     .container-fluid {
         margin: 0;
@@ -555,7 +601,7 @@ input:required:focus {
     }
     
     .main-nav {
-        display: inline-block !important;
+        display: inline !important;
     }
       
 
@@ -619,13 +665,11 @@ input:required:focus {
 
 @media(min-width: 1231px){
 
-    .main-nav{
-        display: inline-block !important;
-    }
     .nav li{
         width: 9%;
-        display: inline ;
+
         margin-right: 15px;
+         display: inline !important;
         
             }
 
@@ -645,14 +689,13 @@ input:required:focus {
         text-align: left;
         padding-left: 0px;
         margin-left: 0px;
-
+ 
     }
-
+   
 
     .nav {
         margin-top: 0px;
         padding: 0px;
-        margin: 0px;
         width: 100%;
         
 
