@@ -36,14 +36,15 @@ small {
 
 body {
     background-color: #eee2dc;
-    width:100%;
-    font-size: small;
+    width:fit-content;
+    /* width: 100%  this will be 100% on larger screen - make media query*/
+ 
     }  
 
 
 /* ===========Title - QA by Erica =========== */
 .title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #edc7b7;  
     z-index: 1;
     top: 58px;
@@ -52,27 +53,30 @@ body {
     font-weight: 100;
     position: relative;
     top: 1;
-    margin-right: auto;
+    margin-right: auto; will add to media query*/
     display: none;
 }
 
-.title::before,
+/* .title::before,
 .title::after {
-    content: "";                /* ==========Pseudo-element for Title =========== */
-    display: inline-block;
+    content: "";                ==========Pseudo-element for Title =========== */
+    /* display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #edc7b7;
-    margin: 0 20px; 
+    margin: 0 20px;
+  
+} add to media query  */
             
-            } 
+            
 
 
     h2,
     th, 
     td {
         color: #ac3b61;
+        font-size: small;
         
     }
 
@@ -163,10 +167,30 @@ a:hover {
 }   
 
 /*=========== Home Page=========== */
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.col-sm-5 {
+    display: none;
+}
+
+.col-sm-7 {
+    padding: 0;
+}
 
 .main-testing {
     margin-top: 0px;
     margin-left: -15px;
+    margin-top: 5px;
+    word-wrap: break-word;
+    line-break: auto;
+    margin: auto;
    
     
 }
@@ -187,19 +211,26 @@ a:hover {
     color: #123c69;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
-       
+    font-size: small;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold
 }
-   
 
-p {
+.lead {
     color: #123c69;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5em;
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-  
-   }
+    font-size:small ;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+}
 
    .uat-page {
     color: #123c69;
@@ -408,36 +439,19 @@ input:required:focus {
 /*=========== Media Queries=========== */
 
 @media(min-width:50px)and (max-width:318px) {
-    body {
-        width: fit-content;
-    }
  
-    h2 {
-        font-size: small;
-    }
-    .h1 {
-        font-size: small;
-     padding-left: 0;
-     padding-right: 0;
-     margin-left: 0;
-     margin-right: 0;
-     font-weight: bold
-    }
+   
+
     .lead {
-        font-size:small ;
+        /* font-size:small ;
         line-height: 20px;
         text-align: left;
-        margin: 0;
+        margin: 0; */
    
     }
 
-    .col-sm-7 {
-        padding: 0;
-    }
-    .table {
-        font-size: 12px;
-        
-    }
+  
+
 
 th,
 td {
@@ -477,7 +491,7 @@ li:before {
               
        }  
 
-    .main-testing,
+    
     .uat-testing,
     .performance-testing,
     #container-consult {
@@ -501,20 +515,20 @@ li:before {
 
     }     */
 
-    .container-fluid {
+    /* .container-fluid {
         margin: 0;
         padding: 0;
         
-    }
+    } */
     
 
     #container-consult {
         font-size: small;
     }
 
-    .container-fluid {
+    /* .container-fluid {
         font-size: x-small;
-    }
+    } */
 
 
 
@@ -523,11 +537,6 @@ li:before {
 } 
 
 
-
-@media(max-width:420px) {
-
-
-}
 
 @media(max-width: 373px) {
     .scheduleConsult-heading {
@@ -714,14 +723,14 @@ li:before {
     }
 
 
-    p {
+    /* p {
         color: #123c69;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 1.5em;
         margin-left: 5%;
         margin-right: 5%;
         text-align: justify;
-        }
+        } */
 
 
     header {
