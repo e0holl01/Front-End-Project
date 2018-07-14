@@ -1,4 +1,5 @@
-/*------------------------ Mobile First Approach------------------------- */
+/*------------------------ Mobile First Approach--------------------------------------------------------- */
+
 header{
     
      background-color: black;
@@ -13,7 +14,7 @@ header{
     }
 
 
-footer, {
+footer {
 
     left: 0;
     bottom: 0;
@@ -48,24 +49,24 @@ body {
     }  
 
 
-/* ===========Title - QA by Erica =========== */
+/* ===========Title - QA by Erica =========================================================================== */
 .title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #edc7b7;  
     z-index: 1;
-    top: 58px;
+    top: 1%;
     left: 6px;
     font-size: 20px;
-    font-weight: 100;
     position: relative;
-    top: 1;
-    /* margin-right: auto; will add to media query */
     display: none;
+    
 }
 
+
+/*==========Pseudo-element for Title ========================================================================= */
 .title::before,
 .title::after {
-    content: "";     /*==========Pseudo-element for Title =========== */
+    content: "";     
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -83,7 +84,9 @@ body {
         
     }
 
-.mobileToggle {   /*===========Mobile Menu =========== */
+ /*===========Mobile Menu ================================================================================= */
+
+.mobileToggle {  
     
     color: #f8e981;
     position: relative;
@@ -113,6 +116,7 @@ body {
 }
 
 
+
 div.main-nav{
     display: none;
     text-decoration: none;
@@ -125,14 +129,13 @@ div.main-nav{
     width: 100%;
     display: inline-block;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 15px;
     box-sizing: unset;
-    padding-left: 0;
 
     
 }
 
- /* ==========Pseudo-element for Nav Items =========== */
+ /* ==========Pseudo-element for Nav Items ==================================================================== */
 li::before
  {
     display: none;
@@ -146,7 +149,7 @@ li::before
     }  
 
 
-/*=========== Nav Link Styles=========== */
+/*=========== Nav Link Styles================================================================================== */
 li a {
     color: #edc7b7;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -175,7 +178,7 @@ a:hover {
 
 }   
 
-/*=========== Home Page=========== */
+/*=========== Home Page==================================================================================== */
 .row {
     margin: 0;
 }
@@ -265,7 +268,7 @@ a:hover {
 
 }   
 
-/*=========== UAT Page=========== */
+/*=========== UAT Page===================================================================================== */
 
 .uat-testing {
     margin: 0 auto;
@@ -284,7 +287,7 @@ a:hover {
 
 }
 
-   /*=========== Performance Page=========== */
+   /*=========== Performance Page========================================================================== */
 .performance-testing {
     margin: 0 auto;
     width: 100%;
@@ -302,7 +305,7 @@ a:hover {
 
 }
 
-/*=========== Schedule a Consultation page=========== */
+/*=========== Schedule a Consultation page================================================================= */
 
 .scheduleConsult-heading {
     display: none;
@@ -427,7 +430,7 @@ input:required:focus {
      
 
 
-/*=========== Media Queries=========== */
+/*=========== Media Queries========================================================================== */
 
 @media(min-width:319px) {
 
@@ -541,36 +544,15 @@ li a {
     .mobileToggle{
         display: none;
     }
-
-    .scheduleConsult-heading{
-        margin-top: 45px;
-
-
-    }
-
-
     header {
         width: 100%;
         margin-top: -60px;
         padding-top: 0px;
-      
+        padding-bottom: 15px;     
 
     }
-    
-    .main-nav {
-        display: inline !important;
-    }
-      
 
-    .main-nav li{
-        width: 11%;
-        display: inline-block;
-        padding-left: 0px;
-      
-    }
-    
     .nav {
-        
         display: inline-block;
         position: relative;
         margin-top: 0px;
@@ -580,27 +562,50 @@ li a {
              
     }
 
+    .main-nav {
+        display: inline !important;
+    }
+
+
+    .main-nav li{
+        width: 11%;
+        display: inline-block;
+        padding-left: 15px;
+        margin-right: 15px;
+        margin-left: 0px;
+      
+    }
+
+    li::before {
+        display: none;
+    }
+
     .title {
 
         display: inline-block;
+        top: 63px;
     }
 
+    table {
+        border-right: 1pt solid #ac3b61;
+        border-bottom: none;
+
+    }
+
+    .scheduleConsult-heading{
+        margin-top: 45px;
+
+    }
 
 
     footer {
     
     width: 100%;
     position: fixed;
-    display: inline;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    display: inline;    
     background-color: black;
             
     } 
-
-
-
 
     .contact-footer {
 
@@ -611,6 +616,7 @@ li a {
         color: #f8e981;
         text-align: left;
         background: black;
+        display: inline;
     }
 }
 
