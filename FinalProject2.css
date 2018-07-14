@@ -44,15 +44,13 @@ small {
 
 body {
     background-color: #eee2dc;
-    width:fit-content;
-    /* width: 100%  this will be 100% on larger screen - make media query*/
  
     }  
 
 
 /* ===========Title - QA by Erica =========== */
 .title {
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #edc7b7;  
     z-index: 1;
     top: 58px;
@@ -61,25 +59,22 @@ body {
     font-weight: 100;
     position: relative;
     top: 1;
-    margin-right: auto; will add to media query*/
+    /* margin-right: auto; will add to media query */
     display: none;
 }
 
-/* .title::before,
+.title::before,
 .title::after {
-    content: "";                ==========Pseudo-element for Title =========== */
-    /* display: inline-block;
+    content: "";     /*==========Pseudo-element for Title =========== */
+    display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #edc7b7;
     margin: 0 20px;
   
-} add to media query  */
-            
-            
-
-
+} 
+    
     h2,
     th, 
     td {
@@ -109,7 +104,7 @@ body {
     text-align: right;
     top: 0px;
     margin-top: 0px;
-    margin-left: 15px;
+    margin-left: 4px;
     padding-top: 5px;
     background-color: black;
     box-sizing: unset;
@@ -192,6 +187,8 @@ a:hover {
 
 .col-sm-5 {
     display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .col-sm-7 {
@@ -200,8 +197,6 @@ a:hover {
 
 .main-testing {
     margin-top: 0px;
-    margin-left: -15px;
-    margin-top: 5px;
     word-wrap: break-word;
     line-break: auto;
     margin: auto;
@@ -311,12 +306,8 @@ a:hover {
 
 .scheduleConsult-heading {
     display: none;
-
-/* .scheduleConsult-heading {
-    font-size: auto;
-    margin-top: 45px; */
    
-}
+    }
 form {
 
     display: table-cell;
@@ -326,6 +317,7 @@ form {
     width: 100%;
     position: center;
     color: #123c69;
+    
         
 }
 
@@ -337,10 +329,10 @@ form {
       
 } 
 
-	.form-consult:focus-within {
-	
-        box-shadow: 0px 0.2em 2.5em #c4c4c4;
-        transform: scale(1.025); 
+.form-consult:focus-within {
+
+    box-shadow: 0px 0.2em 2.5em #c4c4c4;
+    transform: scale(1.025); 
 }
 
 
@@ -366,6 +358,7 @@ textarea {
     border-radius: 1.3em;
     border-bottom: 3px solid darkgray;
     background-color: whitesmoke;
+    
    
 }
 
@@ -433,7 +426,9 @@ input:required:focus {
 
 #container-consult {
 	max-width: 500px;
-	margin: auto;
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
 }
      
 
@@ -444,7 +439,6 @@ input:required:focus {
 
     .col-sm-5 {
         display: table;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     h2 {
@@ -484,7 +478,7 @@ input:required:focus {
     
     .uat-testing,
     .performance-testing,
-    #container-consult {
+    /* #container-consult { */{
         margin-top: 5px;
         word-wrap: break-word;
         line-break: auto;
@@ -496,37 +490,58 @@ input:required:focus {
         
     }    
     
-        .lead 
-            {
-            font-size: small;
-            text-align: left;
-            margin-top: 10px;
-        
+.lead 
+    {
+    font-size: small;
+    text-align: left;
+    margin-top: 10px;
 
-        }    
 
-    .container-fluid {
-        margin: 0;
-        padding: 0;
-        
+    }    
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    
     }
     
 
     #container-consult {
         font-size: medium;
-    }
-
-
-
-
-
- 
+    } 
 
 } 
 
+@media(min-width: 412px) {
+
+li::before {
+    margin-left: 10px;
+    }
+
+li a {
+    font-size: medium;
+    }
+
+.lead {
+    font-size: 14px;
+    }
+
+.scheduleConsult-heading {
+    display: block;
+    font-size: 20px;
+
+    }
+
+}
 
 
+@media(min-width: 450px) {
+    #bodyConsultFrom {
+        width: fit-content;
 
+    }
+
+}
 
 @media(min-width:1230px){
  
@@ -548,14 +563,6 @@ input:required:focus {
     }
 
 }
-
-@media(min-width: 374px) {
-    .scheduleConsult-heading {
-        margin-top: 15px;
-
-    }
-}
-	
 
     
 
@@ -590,11 +597,7 @@ input:required:focus {
         padding-left: 0px;
       
     }
-    /* li::before
-     {
-        display: none;
-                
-                }   */
+    
     .nav {
         
         display: inline-block;
@@ -646,11 +649,9 @@ input:required:focus {
 
     .nav li{
         width: 9%;
-
         margin-right: 15px;
-         display: inline !important;
-        
-            }
+        display: inline !important;
+     }
 
 
 
