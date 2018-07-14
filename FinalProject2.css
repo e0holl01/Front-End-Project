@@ -407,17 +407,11 @@ input:required:focus {
 }
 
 #flashMessage {
-    color:red;
-    border-radius: 20px;
-    border-color: red;
-    border-style: double;
-    border-width: medium;
     display: block;
     width: 100%;
     margin-top: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
-    font-weight: bold;
     text-align: center;
     
 }
@@ -543,29 +537,6 @@ li a {
 
 }
 
-@media(min-width:1230px){
- 
-    /* .scheduleConsult-heading {
-        margin-top: 30px;
-
-    } */
-
-}
-
-
-@media(min-width: 1068px) {
-
-
-    .scheduleConsult-heading{
-        margin-top: 25px;
-        
-
-    }
-
-}
-
-    
-
 @media(min-width: 700px){
     .mobileToggle{
         display: none;
@@ -642,6 +613,31 @@ li a {
         background: black;
     }
 }
+
+@media(min-width:1230px){
+ 
+    /* .scheduleConsult-heading {
+        margin-top: 30px;
+
+    } */
+
+}
+
+
+@media(min-width: 1068px) {
+
+
+    .scheduleConsult-heading{
+        margin-top: 25px;
+        
+
+    }
+
+}
+
+    
+
+
 
 
 
