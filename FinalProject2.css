@@ -674,23 +674,15 @@ li a {
     .title {
         position: relative;
     }
+
+    .scheduleConsult-heading{
+        margin-top: 25px;
 }
 
 @media(min-width:992px) {
     .uat-testing,
     .performance-testing {
         max-width: 700px;
-    }
-
-}
-
-@media(min-width: 1068px) {
-
-
-    .scheduleConsult-heading{
-        margin-top: 25px;
-        
-
     }
 
 }
