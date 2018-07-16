@@ -9,7 +9,7 @@ header{
    } 
 
    .main-header {
-    width:  100%;
+    width:  unset;
 
     }
 
@@ -438,6 +438,23 @@ input:required:focus {
         display: table;
     }
 
+    .title {
+        float: right;
+        display: inline;
+        font-size: medium;
+        padding-right: 15px;
+        margin-right: 5px;
+        top: 0;
+        margin-bottom: 0;
+        margin-top: 3px;
+
+    }
+    .title::before,
+    .title::after {
+    display: inline-block;
+    margin: 0 10px;
+}
+
     h2 {
         font-size: medium;
         padding-top: 10px;
@@ -474,29 +491,29 @@ input:required:focus {
 
     
     .uat-testing,
-    .performance-testing,
-    /* #container-consult { */{
+    .performance-testing
+        {
         margin-top: 5px;
         word-wrap: break-word;
         line-break: auto;
         margin: auto;
     }
+
    .h1 {
         font-size: medium;
         text-align: center;
         
     }    
     
-.lead 
+    .lead 
     {
     font-size: small;
     text-align: left;
     margin-top: 10px;
 
-
     }    
 
-.container-fluid {
+    .container-fluid {
     margin: 0;
     padding: 0;
     
@@ -538,12 +555,41 @@ li a {
 
     }
 
+   
+
+
+
+@media(min-width:576px) {
+   
+    
+    
+    .col-sm-5 {
+        display: inline-block;
+        
+    }
+
+    table {
+        border-bottom: none;
+        border-right: 1pt solid #ac3b61;
+    
+    } 
+
 }
 
 @media(min-width: 700px){
-    .mobileToggle{
+
+    .mobileToggle {
         display: none;
     }
+
+    .title {
+
+        display: inline-block;
+        top: 63px;
+        float: left;
+        position: sticky;
+    }
+
     header {
         width: 100%;
         margin-top: -60px;
@@ -555,8 +601,8 @@ li a {
     .nav {
         display: inline-block;
         position: relative;
-        margin-top: 0px;
-        margin-left: -10px;
+        margin-left: 0px;
+        margin-top: 25px;
         top: 10px;
         width: -webkit-fill-available;
              
@@ -568,11 +614,11 @@ li a {
 
 
     .main-nav li{
-        width: 11%;
+        width: 5rem;
         display: inline-block;
         padding-left: 15px;
         margin-right: 15px;
-        margin-left: 0px;
+        vertical-align: middle;
       
     }
 
@@ -580,17 +626,6 @@ li a {
         display: none;
     }
 
-    .title {
-
-        display: inline-block;
-        top: 63px;
-    }
-
-    table {
-        border-right: 1pt solid #ac3b61;
-        border-bottom: none;
-
-    }
 
     .scheduleConsult-heading{
         margin-top: 45px;
@@ -618,16 +653,29 @@ li a {
         background: black;
         display: inline;
     }
+
+    .copyright,
+    small {
+        float: right;
+        display: inline-block;
+        margin-top: 0px;
+        margin-right: 10px;
+        padding-top: 0;
+        color: #edc7b7
+
+    }
 }
 
-@media(min-width:1230px){
- 
-    /* .scheduleConsult-heading {
-        margin-top: 30px;
+@media (min-width: 917px) {
+    .main-nav li {
+        width: auto;
+    }
 
-    } */
-
+    .title {
+        position: relative;
+    }
 }
+
 
 
 @media(min-width: 1068px) {
@@ -642,11 +690,6 @@ li a {
 }
 
     
-
-
-
-
-
 @media(min-width: 1231px){
 
     .nav li{
