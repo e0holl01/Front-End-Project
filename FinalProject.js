@@ -25,7 +25,7 @@ $(function(){
 })
 
 
-// Javascrip
+// Javascript
 
 function showMessage() {
     var form = $("form")[0]
