@@ -157,6 +157,8 @@ li a {
  }  
 
 
+
+
 a {
     text-decoration: none;
     }
@@ -646,7 +648,7 @@ li a {
 
         margin-top: 3px;
         margin-bottom: 3px;
-        margin-left: 15px;
+        margin-left: 5px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: #f8e981;
         text-align: left;
@@ -696,6 +698,9 @@ li a {
         display: inline !important;
      }
 
+     .title {
+         font-size: larger;
+     }
 
 
 
