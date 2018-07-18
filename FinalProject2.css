@@ -99,6 +99,10 @@ body {
     
 }
 
+.mobileToggle:hover {
+    cursor: pointer;
+}
+
 .nav {
    
     width: 100%;
