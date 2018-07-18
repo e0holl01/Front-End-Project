@@ -40,9 +40,11 @@ function showMessage() {
 
          }, 4000);
     }
-
-
     // This script is to run after the flash message and resets the form
+}
+
+function myFunction(x) {
+    x.classList.toggle("change");
 }
 
 

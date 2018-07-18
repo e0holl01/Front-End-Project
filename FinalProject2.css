@@ -96,11 +96,54 @@ body {
     font-weight: bold;
     margin-left: 5px;
     font-size: medium;
+    display: inline-block;
+    cursor: pointer;
+    content: "Menu";
     
 }
 
 .mobileToggle:hover {
     cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #f8e981;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1::after {
+    content: "Menu";
+    margin-left: 41px;
+    font-size: large;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    
+}
+.change .bar1::after {
+    display: none;
+}
+
+.change::after{
+    content: "Close";
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 .nav {
@@ -418,7 +461,7 @@ input:required:focus {
 #flashMessage {
     display: block;
     width: 100%;
-    margin-top: 0;
+    margin-top: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
     text-align: center;
@@ -432,6 +475,7 @@ input:required:focus {
     margin: auto;
     box-sizing: border-box;
     display: block;
+    margin-top: 20px;
 }
      
 
