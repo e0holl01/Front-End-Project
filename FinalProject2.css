@@ -494,7 +494,7 @@ input:required:focus {
         font-size: medium;
         padding-right: 15px;
         margin-right: 5px;
-        top: 0;
+        top: 6px;
         margin-bottom: 0;
         margin-top: 3px;
 
@@ -682,6 +682,10 @@ li a {
 
     }
 
+    #flashMessage {
+        margin-top: 30px;
+    }
+
 
     footer {
     
@@ -727,8 +731,12 @@ li a {
 
     .scheduleConsult-heading{
         margin-top: 25px;
-}
+    }
 
+    #flashMessage {
+        margin-top: 7px;
+    }
+}
 @media(min-width:992px) {
     .uat-testing,
     .performance-testing {
@@ -756,4 +764,3 @@ li a {
 
 
 
-/* html mail to  */
