@@ -17,27 +17,25 @@
 </head>
 
 <body id="bodyConsultForm">
-      <!--nav bar/header-->
-    <header class="main-header fixed-top">
-    <h1 class="title">QA by Erica</h1> <!--hides with media query-->
-    <div class="main-nav">
-        <ul class="nav">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="UAT-Testing.html">UAT Testing</a></li>
-            <li><a href="PerformanceTesting.html">Performance Testing</a></li>
-            <li><a href="ConsultHTML.html">Schedule a Consultation</a></li>
-         
-         </ul>
-    </div>
-
-        <!--allows for mobile view -->
-        <span class="mobileToggle" onclick="myFunction(this)">
-                <div class="menu bar1"></div>
-                <div class="menu bar2"></div>
-                <div class="menu bar3"></div> 
+    <!--nav bar/header-->
+    <header class="main-header">
+        <h1 class="title">QA by Erica</h1> <!--hides with media query-->
+        <div class="main-nav">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="UAT-Testing.html">UAT Testing</a></li>
+                <li><a href="PerformanceTesting.html">Performance Testing</a></li>
+                <li><a href="ConsultHTML.html">Schedule a Consultation</a></li>
+            </ul>
+        </div>
+            <!--allows for mobile view -->
+            <span class="mobileToggle" onclick="myFunction(this)">
+                    <div class="menu bar1"></div>
+                    <div class="menu bar2"></div>
+                    <div class="menu bar3"></div> 
             </span>  
+        </header>
 
-</header>
     <br>
     <div class="alert alert-danger alert-dismissible text-center" id="flashMessage">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -46,8 +44,8 @@
     </div> 
   <main id="container-consult">  
         <h1 class="scheduleConsult-heading text-center h1">Schedule a Consultation</h1> 
-    <form class="form-consult container text-justify" autocomplete="on"  
-    onsubmit="parent.scrollTo(0, 0); return true"> 
+        <form class="form-consult container text-justify" autocomplete="on"  
+        onsubmit="parent.scrollTo(0, 0); return true"> 
         
         <!--look up mailto -->
        
@@ -78,10 +76,10 @@
         
 
 
-    </form>
+        </form>
 
   
-</main>
+    </main>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="FinalProject.js"></script>   <!--this javascript is for flash message,
