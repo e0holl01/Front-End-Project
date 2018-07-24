@@ -737,6 +737,17 @@ li a {
     #flashMessage {
         margin-top: 7px;
     }
+
+    .col-sm-5 {
+        max-width: 587px;
+        margin-left: auto;
+    }
+
+    .col-sm-7 {
+        max-width: 700px;
+        margin-right: auto;
+
+    }
 }
 @media(min-width:992px) {
     .uat-testing,
