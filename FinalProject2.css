@@ -461,7 +461,7 @@ input:required:focus {
 #flashMessage {
     display: block;
     width: 100%;
-    margin-top: 16px;
+    margin-top: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1em;
     text-align: center;
@@ -475,8 +475,7 @@ input:required:focus {
     margin: auto;
     box-sizing: border-box;
     display: block;
-    margin-top: 20px;
-}
+  }
      
 
 
@@ -673,6 +672,8 @@ li a {
       
     }
 
+
+
     li::before {
         display: none;
     }
@@ -683,11 +684,7 @@ li a {
 
     }
 
-    #flashMessage {
-        margin-top: 30px;
-    }
-
-
+ 
     footer {
     
     width: 100%;
@@ -734,9 +731,6 @@ li a {
         margin-top: 25px;
     }
 
-    #flashMessage {
-        margin-top: 7px;
-    }
 
     .col-sm-5 {
         max-width: 587px;
@@ -771,6 +765,32 @@ li a {
      }
 
 
+
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+
+    .main-nav li {
+        width: auto;
+    }
+    
+    li a {
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 10px;
+        
+    }
+s
+ 
 
 }
 
