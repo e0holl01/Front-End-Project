@@ -1,0 +1,238 @@
+body 
+    {
+        background-color: honeydew;
+        width: 100%;
+        margin-right: 0px;
+        
+}
+
+header {
+    background-color: #41b3ab;
+    width: =webkit-fill-available;
+}
+
+
+footer {
+    display:  none;
+    
+    }
+
+
+
+/*===========Mobile Menu ================================================================================= */
+
+.mobileToggle {  
+    
+    color: whitesmoke;
+    position: relative;
+    top: 0px;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: medium;
+    display: inline-block;
+    cursor: pointer;
+    content: "Menu";
+    
+}
+
+.mobileToggle:hover {
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: whitesmoke;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1::after {
+    content: "Menu";
+    margin-left: 41px;
+    font-size: large;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    
+}
+.change .bar1::after {
+    display: none;
+}
+
+.change::after{
+    content: "Close";
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*===================================================== */
+
+.sidebarnav {
+    padding-left: 0px;
+    list-style-type: none;
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: right;
+    top: 0px;
+    margin-top: 0px;
+    margin-left: 4px;
+    padding-top: 5px;
+    box-sizing: unset;
+    font-size: small;
+    display: none;
+}
+
+
+.row {
+    padding-top: 10px;
+    margin: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+
+.macaw-img {
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.main-content {
+    margin-left: 70px;
+}
+.map-macaw {
+    margin-left: 25%;
+}
+
+.secondary-content {
+    padding-left: 40px;
+    margin-left: 160px;
+}
+
+.little-facts {
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+
+h5 {
+    text-align: center;
+    text-decoration-line: underline;
+    color:whitesmoke;
+    display: none;
+
+}
+
+.logo {
+    height: 87px;
+    margin: 5px;
+}
+
+.sidenav {
+        height: auto; /* Full-height: remove this if you want "auto" height */
+        width: 200px; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #41b3ab; 
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 48px;
+        padding-bottom: 9px;
+   
+           
+}
+
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #374785;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #e8a87c;
+}
+
+.nav-tabs,
+ .nav-link {
+    border: 1px solid #41b3ab;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background-color: honeydew;
+    
+}
+
+.nav-item {
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+    box-sizing: unset;
+}
+
+.site-header /*logo*/ 
+    {
+        margin-left: 160px;
+        width: fit-content;
+    }
+
+.title {
+    margin-left: 165px;
+    margin-right: -116px;
+    
+}
+
+
+
+.Phone,
+.tollfreePhone,
+.Email,
+.International {
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/*==================== Media Queries============== */
+
+
+
+@media(min-width: 700px){
+
+    .mobileToggle {
+        display: none;
+    }
+
+    .sidenav {
+        display: inline;
+        
+    }
+
+}
+    
